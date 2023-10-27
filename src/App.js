@@ -7,8 +7,6 @@ import { ThemeProvider, createTheme, responsiveFontSizes } from "@mui/material/s
 import CssBaseline from "@mui/material/CssBaseline";
 import { Typography } from "@mui/material";
 
-import MuiMarkdown from 'mui-markdown';
-
 import MaterialUISwitch from "./components/MaterialUISwitch.js";
 
 import Home from './pages/Home.js';
