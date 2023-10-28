@@ -1,19 +1,24 @@
 //App.js
 
 import React, { useState } from "react";
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import { useLocation, BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import { ThemeProvider, createTheme, responsiveFontSizes } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import { Typography } from "@mui/material";
+import "./App.css";
 
-import MaterialUISwitch from "./components/MaterialUISwitch.js";
-
+import Header from "./components/Header.js";
 import Home from './pages/Home.js';
+import About from './pages/About.js';
 import OpenLib from './pages/OpenLibrary.js';
+import NoraNormile from './pages/NoraNormile.js';
+import UrbanCowboy from './pages/UrbanCowboy.js';
+import Kimino from './pages/Kimino.js';
+import Meanwhile from './pages/Meanwhile.js';
+import WCMA from './pages/WCMA.js';
 
 export default function App() {
-
   // state to manage the dark mode
   const [toggleDarkMode, setToggleDarkMode] = useState(true);
 
@@ -40,22 +45,40 @@ export default function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <div className= "header" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: '3vh', marginLeft: '5vw', marginRight: '5vw' }}>
-        <Typography variant="h4">samuel z grunebaum</Typography>
-        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end'}}>
-          <MaterialUISwitch checked={toggleDarkMode} onChange={toggleDarkTheme} />
-        </div>
-      </div>
-
-      <div className="App">
-        <Router>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/openlibrary" element={<OpenLib />} />
-            {/* <Route path="/about" element={<About />} /> */}
-          </Routes>
-        </Router>  
-      </div>
+      <Router>
+        <Header checked={toggleDarkMode} onChange={toggleDarkTheme} />
+        <Inner />
+      </Router>
     </ThemeProvider>
+  )
+}
+
+function Inner() {
+  const location = useLocation();
+  console.log(location);
+
+  
+
+  return (
+    
+      <div className="App">
+        
+          <TransitionGroup>
+            <CSSTransition key={location.key} classNames="fade" timeout={300}>
+              <Routes location={location}>
+                <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/openlibrary" element={<OpenLib />} />
+                <Route path="/noranormile" element={<NoraNormile />} />
+                <Route path="/urbancowboy" element={<UrbanCowboy />} />
+                <Route path="/kimino" element={<Kimino />} />
+                <Route path="/meanwhile" element={<Meanwhile />} />
+                <Route path="/wcma" element={<WCMA />} />
+              </Routes>
+            </CSSTransition>
+          </TransitionGroup>
+          
+      </div>
   )
 }

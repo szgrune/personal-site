@@ -1,9 +1,11 @@
 //Home.js
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Grid from '@mui/material/Grid';
-import { Card, CardActionArea, CardContent, CardMedia, Link, Typography } from "@mui/material";
+import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+
+import "../App.css";
 
 import mybooksImage from "../img/mybooks-mobile.png";
 import noraImage from "../img/nora_icon.png";
@@ -20,7 +22,7 @@ export default function Home() {
 
     /* routePaths are defined in App.js */
     const redirectRoute = async routePath => {
-        await delay(250);
+        await delay(300);
         navigate(routePath);
     };
 
