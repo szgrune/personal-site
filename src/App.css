@@ -7,7 +7,6 @@ h1.fade-enter {
 }
 
 .fade-enter.fade-enter-active {
-
   opacity: 1;
   transition: opacity 300ms;
 }
@@ -18,11 +17,6 @@ h1.fade-enter {
 .fade-exit.fade-exit-active {
   opacity: 0;
   transition: opacity 300ms;
-}
-
-.fade-enter-done {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
 }
 
 
