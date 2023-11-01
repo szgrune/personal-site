@@ -45,12 +45,6 @@ const OpenLib = () => {
       figcaption {
         max-width: 90vw;
       }
-
-      @media only screen and (max-width:600px) {
-        img {
-          max-height: 90vh;
-        }
-      }
 </style>
 ### Open Library My Books Page Redesign
 
