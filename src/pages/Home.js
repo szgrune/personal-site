@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 import "../App.css";
 
-import mybooksImage from "../img/mybooks-mobile.png";
+import mybooksImage from "../img/openlibrary.png";
 import noraImage from "../img/nora_icon.png";
 import cowboyCreative from "../img/cowboycreative.png";
 import kiminoLanding from "../img/kimino-landing.png";
@@ -29,7 +29,7 @@ export default function Home() {
     };
 
     return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'left' , margin: '5vw'}}>
+    <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'left' , marginLeft: '5vw', marginRight: '5vw'}}>
         {/* rendering the card component with card content */}
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 1, sm: 8, md: 12 }}>
             <Grid item xs={2} sm={4} md={4}>
@@ -45,6 +45,24 @@ export default function Home() {
                             </Typography>
                             <Typography variant="body1">
                             Since June 2022, I have contributed new page designs and code as a fellow with Open Library, a project from Internet Archive. 
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </CardActionArea>
+            </Grid>
+            <Grid item xs={2} sm={4} md={4}>
+                <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/kimino")}>
+                    <Card sx={{ borderRadius: 3, padding: 1 }}>
+                        <CardContent>
+                            <CardMedia sx={{ height: 200, borderRadius: 3 }} image={kiminoLanding} />
+                            <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
+                                Kimino Drinks
+                            </Typography>
+                            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                                Global natural juice brand based in Japan
+                            </Typography>
+                            <Typography variant="body1">
+                                UX design lead and solo developer for overhaul redesign of Kimino Drinks website. Optimized site for e-commerce with modular Shopify sections.
                             </Typography>
                         </CardContent>
                     </Card>
@@ -81,24 +99,6 @@ export default function Home() {
                             </Typography>
                             <Typography variant="body1">
                                 Ongoing project with luxury hotel brand Urban Cowboy + Cowboy Creative Studio. Designing and launching sites across multiple platforms.
-                            </Typography>
-                        </CardContent>
-                    </Card>
-                </CardActionArea>
-            </Grid>
-            <Grid item xs={2} sm={4} md={4}>
-                <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/kimino")}>
-                    <Card sx={{ borderRadius: 3, padding: 1 }}>
-                        <CardContent>
-                            <CardMedia sx={{ height: 200, borderRadius: 3 }} image={kiminoLanding} />
-                            <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
-                                Kimino Drinks
-                            </Typography>
-                            <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                                Global natural juice brand based in Japan
-                            </Typography>
-                            <Typography variant="body1">
-                                UX design lead and solo developer for overhaul redesign of Kimino Drinks website. Optimized site for e-commerce with modular Shopify sections.
                             </Typography>
                         </CardContent>
                     </Card>
