@@ -43,6 +43,7 @@ const OpenLib = () => {
         max-height: 50vh;
       }
       figcaption {
+        margin-top: 2vh;
         max-width: 90vw;
       }
 
