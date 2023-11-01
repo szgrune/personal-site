@@ -38,6 +38,7 @@ const Kimino = () => {
         margin: 5vh 8vw !important;
       }
       img {
+        object-fit: contain;
         max-width: 100vw;
         max-height: 50vh;
       }
