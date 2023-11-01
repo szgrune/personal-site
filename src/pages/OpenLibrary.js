@@ -45,11 +45,17 @@ const OpenLib = () => {
       figcaption {
         max-width: 90vw;
       }
+
+      @media only screen and (max-width:600px) {
+        img {
+          max-height: 90vh;
+        }
+      }
 </style>
 ### Open Library My Books Page Redesign
 
 <figure>
-    <img height="40%" src="./OLMobileMyBooksBeforeAfter.png">
+    <img src="./OLMobileMyBooksBeforeAfter.png">
     <figcaption align="center">
         This image depicts the before and after of the Open Library mobile My Books page design
     </figcaption>
@@ -64,7 +70,7 @@ Open Library patrons and stakeholders alike identified the My Books page as a ma
 At the beginning of the project the desktop interface loaded by clicking the ‘My Books’ button in the header looked like this:
 
 <figure>
-    <img height="40%" src="./OpenLibraryOGDesktop.png">
+    <img src="./OpenLibraryOGDesktop.png">
     <figcaption align="center">
         The original landing page for the 'My Books' section of the website, which was actually just the user's Loans page
     </figcaption>
@@ -73,7 +79,7 @@ At the beginning of the project the desktop interface loaded by clicking the ‘
 Another problem that was continually observed with the existing design is the mobile navigation on this page:
 
 <figure>
-    <img height="40%" src="./OpenLibraryOGMobile.png">
+    <img src="./OpenLibraryOGMobile.png">
     <figcaption align="center">
         The original menu section with the grey background was actually scrollable, though this was not clear from the design
     </figcaption>
@@ -99,7 +105,7 @@ In conjunction with Dana, another 2022 Design Fellow, we continued to iterate on
 We settled on the following approach for desktop, which includes new carousel sections for displaying books and creates space for a Reading Stats data visualization widget:
 
 <figure>
-    <img height="40%" src="./OpenLibraryNewDesktop.png">
+    <img src="./OpenLibraryNewDesktop.png">
     <figcaption align="center">
         The new desktop interface displays the user's reading stats and organizes their saved books into carousels
     </figcaption>
@@ -110,7 +116,7 @@ Alongside the new desktop design, the mobile-first redesign that we settled on m
 This mobile design not only improves usability and accessibility to the key components of My Books, but also decreases engineering overhead by allowing for a responsive design using the original sidebar menu:
 
 <figure>
-    <img height="40%" src="./OLMobileMyBooksInterfaces.png">
+    <img src="./OLMobileMyBooksInterfaces.png">
     <figcaption align="center">
         The top and bottom of the new mobile My Books page, with sections for the user's books, lists, and stats
     </figcaption>
