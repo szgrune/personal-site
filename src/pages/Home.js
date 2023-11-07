@@ -8,8 +8,8 @@ import { useNavigate } from "react-router-dom";
 import "../App.css";
 
 import mybooksImage from "../img/openlibrary.png";
-import noraImage from "../img/nora_icon.png";
-import cowboyCreative from "../img/cowboycreative.png";
+import noraImage from "../img/nora_platform.png";
+import cowboyCreative from "../img/UClogo.png";
 import kiminoLanding from "../img/kimino-landing.png";
 import meanwhileImage from "../img/meanwhile_partners.png";
 import wcmaImage from "../img/wcma_illustration.png";
@@ -90,7 +90,7 @@ export default function Home() {
                 <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/urbancowboy")}>
                     <Card sx={{ borderRadius: 3, padding: 1 }}>
                         <CardContent>
-                            <CardMedia sx={{ height: 200, borderRadius: 3 }} image={cowboyCreative} />
+                            <CardMedia sx={{ objectFit: 'contain', height: 200, borderRadius: 3, backgroundColor: 'black' }} image={cowboyCreative} />
                             <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
                                 Urban Cowboy
                             </Typography>
