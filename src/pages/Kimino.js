@@ -53,7 +53,7 @@ const Kimino = () => {
         }
       }
 </style>
-### Kimino Drinks Website Redesign
+### <a href="https://kimino.com" target="_blank">Kimino Drinks</a> Website Redesign
 
 <img src="./Collage New.png">
 

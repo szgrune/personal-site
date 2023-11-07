@@ -1,3 +1,16 @@
+a {
+  color: inherit !important;
+  opacity: 0.8;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+h3 > a {
+  text-decoration-thickness: 2.5px !important;
+}
+
 .fade-enter {
   opacity: 0;
 }
@@ -51,8 +64,4 @@ figure > div > div {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }

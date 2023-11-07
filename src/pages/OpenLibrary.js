@@ -53,7 +53,7 @@ const OpenLib = () => {
         }
       }
 </style>
-### Open Library My Books Page Redesign
+### Open Library <a href="https://openlibrary.org/account/books" target="_blank">My Books Page</a> Redesign
 
 <figure>
     <img src="./OLMobileMyBooksBeforeAfter.png">

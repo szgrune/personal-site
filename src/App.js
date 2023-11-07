@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { useLocation, BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ScrollToTop from "./scrollToTop";
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import { ThemeProvider, createTheme, responsiveFontSizes } from "@mui/material/styles";
@@ -47,6 +48,7 @@ export default function App() {
       <CssBaseline />
       <Router>
         <Header checked={toggleDarkMode} onChange={toggleDarkTheme} />
+        <ScrollToTop />
         <Inner />
       </Router>
     </ThemeProvider>

@@ -53,7 +53,7 @@ const NoraNormile = () => {
         }
       }
 </style>
-### Nora Normile Artist Website Redesign
+### <a href="https://noranormile.net" target="_blank">Nora Normile</a> Artist's Website Redesign
 
 <img src="./NoraDesktopNoHover.png">
 
