@@ -89,6 +89,8 @@ We used Webflow for the Cowboy Creative Studio website, which necessitated balan
 
 #### MOBILE FIRST DESIGN
 
+Research indicates that the majority of Internet users at a given moment are accessing the web through mobile devices. We used a mobile-first approach to this design, creating interactive Figma mockups before moving onto Squarespace.
+
 <figure>
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="80%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9hS94p6u0k6dSRCL3Bsc0S%2FPorter-Katz-Wires%3Ftype%3Ddesign%26node-id%3D1-2%26t%3DuHMZ7xR8TAv1pGD8-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2%26mode%3Ddesign" allowfullscreen></iframe>
     <figcaption align="center">
