@@ -40,11 +40,11 @@ const Meanwhile = () => {
       img {
         object-fit: contain;
         max-width: 100vw;
-        max-height: 50vh;
+        max-height: 70vh;
       }
       figcaption {
         margin-top: 2vh;
-        max-width: 90vw;
+        max-width: 80vw;
       }
       iframe {
         height: 600px
@@ -61,54 +61,52 @@ const Meanwhile = () => {
 </style>
 ### Meanwhile Partners Collaboration
 
+I collaborated with Meanwhile Partners design studio as one of the lead UX designers for a redesign of the Nan Xiang Express website. This design took a mobile-first approach with additional goals of optimizing user experience for e-commerce and modernizing expression of brand identity. 
+
 <figure>
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="80%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FCst4KQb6Bpi7L4J13tx716%2FNXE-Wireframes%3Ftype%3Ddesign%26node-id%3D65-3141%26t%3D32CIjM8GaecZYRqn-1%26scaling%3Dcontain%26page-id%3D65%253A2986%26starting-point-node-id%3D65%253A3141%26mode%3Ddesign" allowfullscreen></iframe>
   <figcaption align="center">
-    Home page for the work-in-progress Cowboy Creative Studio website, featuring selected projects and dropdown navigation. All content uses placeholders.
+    Mobile-first Figma prototype for Nan Xiang Express redesigned mobile interface
   </figcaption>
 </figure>
 #### ABSTRACT
 
-In my capacity as UX lead and lead developer for my design studio PG Co alongside my partner George Platt, I am designing and developing multiple work-in-progress websites for the Urban Cowboy boutique hotel and creative consulting brand. Currently this includes the Cowboy Creative Studio website and the Porter Katz real estate brokerage team website. 
+In my capacity as UX lead for the initial information hierarchies and low fidelity prototypes of the Nan Xiang Express website redesign, I supported the Meanwhile Partners studio team in collaborating with Nan Xiang Express stakeholders to create Figma prototypes for a redesign of their restaurant website, starting with low fidelity and overseeing the process of bringing them to high fidelity.
 
-#### DESIGN & DEVELOPMENT 
+#### UX DESIGN & PROTOTYPES
 
-We have worked directly with stakeholders to design usable, sleek websites for their brand. Using a mix of templated, CMS websites and custom code injections, we are building updated versions of these websites optimized both for modernity and accessibility and for driving conversions.
+The Meanwhile Partners team and I have worked directly with stakeholders to design usable, sleek interface for multiple websites for two different brands: Nan Xiang Express restaurant and the ABC Point of Sale back-end marketing experience.
+
+In addition to the mobile-first high fidelity prototypes we made for Nan Xiang Express, shown at the top of the page, we also created desktop flows for a few Nan Xiang Express pages:
 
 <figure>
-    <img src="./PorterKatzTeamPageMocks.png">
+  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="80%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FCst4KQb6Bpi7L4J13tx716%2FNXE-Wireframes%3Ftype%3Ddesign%26node-id%3D541-1531%26t%3DdBKLgTYwFWdDcwD9-1%26scaling%3Dscale-down%26page-id%3D539%253A894%26starting-point-node-id%3D541%253A1531%26mode%3Ddesign" allowfullscreen></iframe>
     <figcaption align="center">
-      Figma mockups depicting mobile-first designs for the Porter Katz brokerage team website, another work-in-progress
+      Desktop prototype for the Nan Xiang Express landing page
     </figcaption>
 </figure>
 
-For the brokerage team page, we used Squarespace mixed with custom code to create a custom website that would be easy to update using Squarespace's CMS. Working in a hybrid capacity with Urban Cowboy stakeholders, we created custom components and worked together to structure directed brainstorms and affinity diagramming to plan out the website's priorities and identify user experience needs.
+For the ABC POS marketing back-end, we developed low fidelity prototypes for crucial pages to present a direction for restructuring the marketing portal for users of the POS software.
 
-We used Webflow for the Cowboy Creative Studio website, which necessitated balancing a higher degree of customizability and unique interactions with the stakeholder requirement of easy asset swapping and content editing.
+We used Figma to create modular components and structure a marketing back-end landing page, as well as sub-pages including a campaign template editor, both of which are shown below.
 
 <figure>
-    <img src="./CowboyCreativeSplashPage.png">
+    <img src="./ABCMarketingDashboard.png">
     <figcaption align="center">
-        The splash page for the Cowboy Creative Studio website features branded video assets, immediately introducing the user to the brand's identity as they are welcomed to the creative consultancy's website
+      The ABC Marketing dashboard includes dropdown tabs for each section of a user's campaigns and promotions, as well as links to sub-pages. There are calls to action for creating new campaigns and promotions, as well as for editing existing ones
     </figcaption>
 </figure>
 
-#### MOBILE FIRST DESIGN
-
-Research indicates that the majority of Internet users at a given moment are accessing the web through mobile devices. We used a mobile-first approach to this design, creating interactive Figma mockups before moving onto Squarespace.
-
 <figure>
-  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="80%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9hS94p6u0k6dSRCL3Bsc0S%2FPorter-Katz-Wires%3Ftype%3Ddesign%26node-id%3D1-2%26t%3DuHMZ7xR8TAv1pGD8-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2%26mode%3Ddesign" allowfullscreen></iframe>
-    <figcaption align="center">
-        Interactive Figma mockup of the Porter Katz team website illustrating overall sitemap and user experience on mobile
-    </figcaption>
+  <img src="./ABCNewCampaign.png">
+  <figcaption align="center">
+      The New Campaign editor includes options for editing mobile and desktop views of a campaign, as well as campaign style settings and options for changing the promotions included and the template used
+  </figcaption>
 </figure>
 
 #### CONCLUSION
  
-The design and development process so far has been an incredibly smooth collaboration between our two teams. We are looking forward to continuing building out the Creative Cowboy Studio website and Porter Katz brokerage team page, as we plan to launch before the new year. 
-
-We are excited about our ongoing collaboration with this brand as we continue to overall their digital presence by bringing it into the 2020s, focusing on accessibility, mobile-first, and a more modern, youthful aesthetic sensibility. `
+The new designs for Nan Xiang Express have already been handed off for development and will soon be live, creating a more current and modern, conventionally usable approach to restaurant e-commerce website design for this growing restaurant brand. `
 }
 </MuiMarkdown>
   );
