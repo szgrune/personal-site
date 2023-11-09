@@ -25,7 +25,7 @@ function WCMA() {
         figure: {
           component: 'figure',
           props: {
-            style: { display: 'flex', flexDirection: 'column', margin: '5vh auto', alignItems: 'center' }
+            style: { display: 'flex', flexDirection: 'column', maxWidth: "100vw", margin: '5vh auto', alignItems: 'center' }
           }
         }
       }}
@@ -83,7 +83,7 @@ After our UX research, we created affinity diagrams to identify themes in our qu
 
 You can also check out our video prototype demo:
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/Ge0hL6zgZx0" title="SWCMA Prototype Final" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+<iframe width="640" height="360" style="max-width: 100vw" src="https://www.youtube.com/embed/Ge0hL6zgZx0" title="SWCMA Prototype Final" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
 
 #### AGENT FOR CREATIVE ACTION
 

@@ -12,7 +12,8 @@ import Divider from "@mui/material/Divider";
 
 import MaterialUISwitch from "./MaterialUISwitch.js";
 
-import resumePDF from "../img/Samuel_Grunebaum_Resume_October_2023.pdf";
+import resumePDF from "../img/Samuel Grunebaum CV 2023.pdf";
+import { ReactComponent as ExternalLink } from "../img/external-link.svg"
 
 export default function MainNavigation(props) {
 
@@ -101,16 +102,14 @@ export default function MainNavigation(props) {
                             <Typography variant="h6" sx={{ cursor: "pointer", textAlign: "center", p: 2 }} onClick={() => redirectRoute("/contact")}>contact</Typography>
                         </Box>
                         <Typography variant="h6" sx={{ cursor: "pointer", textAlign: "center", p: 2 }}>
-                            <a style={{color: "inherit" }} href={resumePDF} target="_blank" rel="noreferrer">
-                                cv
+                            <a style={{color: "inherit", textDecoration: "none"}} href={resumePDF} target="_blank" rel="noreferrer">
+                                cv <ExternalLink style={{display: "inline", width: "1em", height: "0.7em", position: "relative", top: "0.05em"}} />
                             </a>
                         </Typography>
                     </Box>
                 </Box>
                 
             </Drawer>
-            
-
         </>
 
     );

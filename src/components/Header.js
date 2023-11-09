@@ -4,7 +4,8 @@ import { Box, Typography } from "@mui/material";
 import MaterialUISwitch from "./MaterialUISwitch.js";
 import MainNavigation from "./MainNavigation.js";
 
-import resumePDF from "../img/Samuel_Grunebaum_Resume_October_2023.pdf";
+import resumePDF from "../img/Samuel Grunebaum CV 2023.pdf";
+import { ReactComponent as ExternalLink } from "../img/external-link.svg"
 
 export default function Header(props) {
 
@@ -22,8 +23,8 @@ export default function Header(props) {
           <Typography variant="h6" style={{ cursor: "pointer", marginRight: "3vw" }} button onClick={() => redirectRoute("/about")}>about</Typography>
           <Typography variant="h6" style={{ cursor: "pointer", marginRight: "3vw" }} button onClick={() => redirectRoute("/contact")}>contact</Typography>
           <Typography variant="h6" style={{ cursor: "pointer", marginRight: "3vw" }}>
-            <a style={{color: "inherit" }} href={resumePDF} target="_blank" rel="noreferrer">
-              cv
+            <a style={{color: "inherit", textDecoration: "none" }} href={resumePDF} target="_blank" rel="noreferrer">
+              cv <ExternalLink style={{display: "inline", width: "1em", height: "0.7em", position: "relative", top: "0.06em"}} />
             </a>
           </Typography>
           <MaterialUISwitch checked={props.checked} onChange={props.onChange} />
