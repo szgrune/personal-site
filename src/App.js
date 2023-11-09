@@ -8,9 +8,6 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { ThemeProvider, createTheme, responsiveFontSizes } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import "./App.css";
-import FolioBook from './fonts/Folio-Book-BT.woff2';
-import NotoSans from './fonts/Noto-Sans-regular.woff2';
-import Coolvetica from './fonts/CoolveticaEl-Regular.woff2';
 
 import Header from "./components/Header.js";
 import Home from './pages/Home.js';
