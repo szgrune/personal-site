@@ -63,7 +63,7 @@ function About() {
           align-items: start;
         }
         img {
-          margin: 5vh 8vw;
+          margin: 5vh 8vw !important;
         }
       }
 
@@ -72,7 +72,7 @@ function About() {
           margin: 2vh 5vw !important;
         }
         img {
-          margin: 5vh 5vw;
+          margin: 5vh 8vw !important;
         }
       }
 </style>
