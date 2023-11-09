@@ -63,7 +63,7 @@ function About() {
           align-items: start;
         }
         img {
-          margin-bottom: 5vh
+          margin: 5vh 8vw;
         }
       }
 
