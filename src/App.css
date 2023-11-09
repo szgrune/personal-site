@@ -64,3 +64,32 @@ figure > div > div {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+@font-face {
+  font-family: 'Coolvetica';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Coolvetica'), url('./fonts/CoolveticaEl-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'DeAetna';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('DeAetna'), url('./fonts/DeAetna-Subhead.otf') format('otf');
+}
+@font-face {
+  font-family: 'Folio Book';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Folio'), url('./fonts/Folio-Book-BT.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Noto Sans'), url('./fonts/Noto-Sans-regular.woff2') format('woff2');
+}

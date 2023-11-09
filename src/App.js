@@ -45,7 +45,7 @@ export default function App() {
     },
     typography: {
       h6: {
-        fontFamily: 'Noto Sans, Folio, Helvetica, Arial, sans-serif',
+        fontFamily: 'Folio Book, Helvetica, Arial, sans-serif',
       },
       h5: {
         fontFamily: 'DeAetna, sans-serif',
@@ -59,43 +59,13 @@ export default function App() {
         fontFamily: 'Coolvetica, sans-serif'
       },
       subtitle1: {
-        fontFamily: 'Noto Sans, sans-serif',
+        fontFamily: 'Noto Sans',
       },
       body1: {
-        fontFamily: 'Folio, sans-serif',
+        fontFamily: 'Folio Book',
         fontWeight: '300',
       },
-    },
-    components: {
-      MuiCssBaseline: {
-        styleOverrides: `
-          @font-face {
-            font-family: 'Coolvetica';
-            font-style: normal;
-            font-display: swap;
-            font-weight: 400;
-            src: local('Coolvetica'), url(${Coolvetica}) format('woff2');
-            unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
-          },
-          @font-face {
-            font-family: 'Folio Book';
-            font-style: normal;
-            font-display: swap;
-            font-weight: 400;
-            src: local('Folio'), url(${FolioBook}) format('woff2');
-            unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
-          },
-          @font-face {
-            font-family: 'Noto Sans';
-            font-style: normal;
-            font-display: swap;
-            font-weight: 400;
-            src: local('Noto Sans Book'), url(${NotoSans}) format('woff2');
-            unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
-          },
-        `,
-      },
-    },
+    }
   });
 
   darkTheme = responsiveFontSizes(darkTheme);
