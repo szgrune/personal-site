@@ -63,6 +63,7 @@ function About() {
           align-items: start;
         }
         img {
+          width: 86vw;
           margin: 5vh 8vw !important;
         }
       }
