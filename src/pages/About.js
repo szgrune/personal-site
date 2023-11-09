@@ -73,7 +73,8 @@ function About() {
           margin: 2vh 5vw !important;
         }
         img {
-          margin: 5vh 8vw !important;
+          width: 90vw;
+          margin: 5vh 5vw !important;
         }
       }
 </style>
