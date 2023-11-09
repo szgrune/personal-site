@@ -134,7 +134,7 @@ export default function Home() {
                                 UX design at Williams College Museum of Art
                             </Typography>
                             <Typography variant="body1">
-                                Undergraduate design research and prototyping project for wayfinding solutions; Agent for Creative action with museum's visitor engagement office
+                                Undergraduate design research and prototyping project for wayfinding solutions; Agent for Creative action with visitor engagement office
                             </Typography>
                         </CardContent>
                     </Card>
