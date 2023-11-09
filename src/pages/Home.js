@@ -116,7 +116,7 @@ export default function Home() {
                                 UX web design collaboration
                             </Typography>
                             <Typography variant="body1">
-                                UX designer for Nan Xiang Express restaurant website redesign and ABC POS management platform, in collaboration with Meanwhile Partners.
+                                UX designer for Nan Xiang Express restaurant website redesign and new ABC POS interfaces, in collaboration with Meanwhile Partners.
                             </Typography>
                         </CardContent>
                     </Card>
