@@ -44,69 +44,56 @@ function WCMA() {
       }
       figcaption {
         margin-top: 2vh;
-        max-width: 80vw;
-      }
-      iframe {
-        height: 600px
+        max-width: 60vw;
       }
 
       @media only screen and (max-width:600px) {
         img {
           max-height: 90vh;
         }
-        iframe {
-          height: 500px;
-        }
       }
 </style>
 ### WCMA Visitor Engagement Collaboration and Wayfinding UX Design Project
 
-As an undergraduate at Williams College, 
+As an undergraduate at Williams College, I participated in the Williams College Museum of Art (WCMA) 2018-19 Agents for Creative Action program. Concurrently with my participation in Agents for Creative Action, I developed a group UX research project and accompanying prototypes for a wayfinding solution at WCMA as part of a Williams College Human Computer Interaction course.
+
+You can read more about my work as an Agent for Creative Action at WCMA <a href="https://www.berkshireeagle.com/news/local/agents-for-creative-change-williams-students-serve-art-and-brunch-in-24-hour-challenge/article_8f2abe67-ce4c-54ea-a48a-bad3868982bf.html" target="_blank">here</a>. For a more in depth showcase of my group project on wayfinding at WCMA, check out our project overview <a href="https://cmpelz.github.io/" target="_blank">website</a>.
+
+View our low fidelity interactive digital prototype for the WCMA wayfinding human computer interaction project here:
 
 <figure>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="80%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FCst4KQb6Bpi7L4J13tx716%2FNXE-Wireframes%3Ftype%3Ddesign%26node-id%3D65-3141%26t%3D32CIjM8GaecZYRqn-1%26scaling%3Dcontain%26page-id%3D65%253A2986%26starting-point-node-id%3D65%253A3141%26mode%3Ddesign" allowfullscreen></iframe>
+<iframe width="442" height="935" src="//invis.io/7JPHXXAN3VA" frameborder="0" allowfullscreen=""></iframe>
   <figcaption align="center">
-    Mobile-first Figma prototype for Nan Xiang Express redesigned mobile interface
+    Mobile-first inDesign prototype for SWCMA (Search WCMA), the wayfinding app solution my group created for our 2018 Human Computer Interaction semester project
   </figcaption>
 </figure>
-#### ABSTRACT
 
-In my capacity as UX lead for the initial information hierarchies and low fidelity prototypes of the Nan Xiang Express website redesign, I supported the Meanwhile Partners studio team in collaborating with Nan Xiang Express stakeholders to create Figma prototypes for a redesign of their restaurant website, starting with low fidelity and overseeing the process of bringing them to high fidelity.
-
-#### UX DESIGN & PROTOTYPES
-
-The Meanwhile Partners team and I have worked directly with stakeholders to design usable, sleek interface for multiple websites for two different brands: Nan Xiang Express restaurant and the ABC Point of Sale back-end marketing experience.
-
-In addition to the mobile-first high fidelity prototypes we made for Nan Xiang Express, shown at the top of the page, we also created desktop flows for a few Nan Xiang Express pages:
+#### SWCMA WAYFINDING SOLUTION DESIGN PROCESS OVERVIEW
 
 <figure>
-  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="80%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FCst4KQb6Bpi7L4J13tx716%2FNXE-Wireframes%3Ftype%3Ddesign%26node-id%3D541-1531%26t%3DdBKLgTYwFWdDcwD9-1%26scaling%3Dscale-down%26page-id%3D539%253A894%26starting-point-node-id%3D541%253A1531%26mode%3Ddesign" allowfullscreen></iframe>
-    <figcaption align="center">
-      Desktop prototype for the Nan Xiang Express landing page
-    </figcaption>
-</figure>
-
-For the ABC POS marketing back-end, we developed low fidelity prototypes for crucial pages to present a direction for restructuring the marketing portal for users of the POS software.
-
-We used Figma to create modular components and structure a marketing back-end landing page, as well as sub-pages including a campaign template editor, both of which are shown below.
-
-<figure>
-    <img src="./ABCMarketingDashboard.png">
-    <figcaption align="center">
-      The ABC Marketing dashboard includes dropdown tabs for each section of a user's campaigns and promotions, as well as links to sub-pages. There are calls to action for creating new campaigns and promotions, as well as for editing existing ones
-    </figcaption>
-</figure>
-
-<figure>
-  <img src="./ABCNewCampaign.png">
+  <img src="./SWCMA_process_homepage.png">
   <figcaption align="center">
-      The New Campaign editor includes options for editing mobile and desktop views of a campaign, as well as campaign style settings and options for changing the promotions included and the template used
+    Our process, outlined here, started with UX research and then built solutions and iterative prototypes on that foundation
   </figcaption>
 </figure>
+
+Our process for the SWCMA wayfinding solution project started with problem definition, followed by contextual inquiries and structured interviews with museum visitors and stakeholders. 
+
+After our UX research, we created affinity diagrams to identify themes in our qualitative research and then began storyboarding possible solutions using user personas we developed. We then went from storyboards to paper prototypes, which we used for usability testing. From there, we created our digital prototype and video prototype demo. Each step of our design process for SWCMA is outlined in the <a href="https://cmpelz.github.io/appendix/" target="_blank">appendix</a> of our project overview website.
+
+You can also check out our video prototype demo:
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Ge0hL6zgZx0" title="SWCMA Prototype Final" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+
+#### AGENT FOR CREATIVE ACTION
+
+As a WCMA Agent for Creative Action, my cohort and I had numerous roles pertaining to visitor engagement at the museum. Or job was to plan museum programming for the community, create public facing communications materials for said programming, and also to function as a sort of focus group of students for the museum. 
+
+We learned about everything from how to draft press releases to fine art conservation techniques. Our programs included a series of winter latenight snack events at the museum with live performances, as well as a sound/food installation with locally baked bread in the museum's rotunda. The flyer for the latter event can be found <a href="https://artmuseum.williams.edu/event/experiments-with-art-and-brunch/" target="_blank">here</a>. You can also read more about the event in this Berkshire Eagle <a href="https://www.berkshireeagle.com/news/local/agents-for-creative-change-williams-students-serve-art-and-brunch-in-24-hour-challenge/article_8f2abe67-ce4c-54ea-a48a-bad3868982bf.html" target="_blank">article</a>.
 
 #### CONCLUSION
 
-The new designs for Nan Xiang Express have already been handed off for development and will soon be live, creating a more current and modern, conventionally usable approach to restaurant e-commerce website design for this growing restaurant brand. `
+My undegraduate work with WCMA, both as a Human Computer Interaction student designer and as a WCMA Agent for Creative Action, introduced me to the world of user-centered design. Through the support of my professor, Iris Howley, and the museum office of Academic and Public Engagement, led by Nina Pelaez, I learned about how important it is to involve end users in the process of designing meaningful, effective, useful new experiences, whether digital solutions or in-person events and programming. I also learned how fun the design process can be! `
     }
     </MuiMarkdown>
       );

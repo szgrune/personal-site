@@ -47,7 +47,7 @@ const Meanwhile = () => {
         max-width: 80vw;
       }
       iframe {
-        height: 600px
+        height: 600px;
       }
 
       @media only screen and (max-width:600px) {

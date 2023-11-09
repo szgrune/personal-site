@@ -20,8 +20,9 @@ export default function Header(props) {
         <Typography variant="h5" style={{ cursor: "pointer" }} button onClick={() => redirectRoute("/")}>samuel z grunebaum</Typography>
         <Box classname="menuDesktop" sx={{ display: {xs:"none", sm: "flex" }, flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end'}}>
           <Typography variant="h6" style={{ cursor: "pointer", marginRight: "3vw" }} button onClick={() => redirectRoute("/about")}>about</Typography>
-          <Typography variant="h6" style={{ cursor: "pointer", marginRight: "3vw" }} button onClick={() => redirectRoute("/about")}>
-            <a style={{color: "inherit" , textDecoration: "none"}} href={resumePDF} target="_blank" rel="noreferrer">
+          <Typography variant="h6" style={{ cursor: "pointer", marginRight: "3vw" }} button onClick={() => redirectRoute("/contact")}>contact</Typography>
+          <Typography variant="h6" style={{ cursor: "pointer", marginRight: "3vw" }}>
+            <a style={{color: "inherit" }} href={resumePDF} target="_blank" rel="noreferrer">
               cv
             </a>
           </Typography>

@@ -15,15 +15,14 @@ h3 > a {
   opacity: 0;
 }
 
-h1.fade-enter {
-  display: none;
-}
+
 
 .fade-enter.fade-enter-active {
   opacity: 1;
   transition: opacity 300ms;
 }
 .fade-exit {
+  display: none;
   opacity: 1;
 }
 

@@ -40,7 +40,7 @@ export default function Home() {
                             <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
                             Open Library
                             </Typography>
-                            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                            <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
                             In conjunction with Internet Archive
                             </Typography>
                             <Typography variant="body1">
@@ -58,7 +58,7 @@ export default function Home() {
                             <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
                                 Kimino Drinks
                             </Typography>
-                            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                            <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
                                 Global natural juice brand based in Japan
                             </Typography>
                             <Typography variant="body1">
@@ -76,7 +76,7 @@ export default function Home() {
                             <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
                                 Nora Normile
                             </Typography>
-                            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                            <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
                                 Custom artist website
                             </Typography>
                             <Typography variant="body1">
@@ -94,7 +94,7 @@ export default function Home() {
                             <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
                                 Urban Cowboy
                             </Typography>
-                            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                            <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
                                 Boutique hotel chain and creative studio
                             </Typography>
                             <Typography variant="body1">
@@ -112,7 +112,7 @@ export default function Home() {
                             <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
                                 Meanwhile Partners
                             </Typography>
-                            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                            <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
                                 UX web design collaboration
                             </Typography>
                             <Typography variant="body1">
@@ -130,7 +130,7 @@ export default function Home() {
                             <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
                                 WCMA
                             </Typography>
-                            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                            <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
                                 UX design at Williams College Museum of Art
                             </Typography>
                             <Typography variant="body1">

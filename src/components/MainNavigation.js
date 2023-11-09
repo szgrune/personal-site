@@ -98,9 +98,10 @@ export default function MainNavigation(props) {
                     <Box sx={{mb: 2}}>
                         <Box onClick={toggleDrawer(false)}>
                             <Typography variant="h6" sx={{ cursor: "pointer", textAlign: "center", p: 2 }} onClick={() => redirectRoute("/about")}>about</Typography>
+                            <Typography variant="h6" sx={{ cursor: "pointer", textAlign: "center", p: 2 }} onClick={() => redirectRoute("/contact")}>contact</Typography>
                         </Box>
                         <Typography variant="h6" sx={{ cursor: "pointer", textAlign: "center", p: 2 }}>
-                            <a style={{color: "inherit" , textDecoration: "none"}} href={resumePDF} target="_blank" rel="noreferrer">
+                            <a style={{color: "inherit" }} href={resumePDF} target="_blank" rel="noreferrer">
                                 cv
                             </a>
                         </Typography>
