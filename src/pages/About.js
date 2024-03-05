@@ -86,8 +86,8 @@ function About() {
   <div>
   Samuel Grunebaum studied Computer Science and Comparative Literature at Williams College. Since then, he has worked as an educator, developer, and designer for institutions such as Fulbright, the Horace Mann School, and the Internet Archive’s Open Library, as well as numerous private clients. 
 
-  Currently, Samuel is focused on learning about, designing, and developing new experiences at the intersection of technology, education, and archival work to build usable, accessible, easily maintainable user-facing solutions. He is also passionate about his commercial design practice and is always open to collaborating with new people.
-
+  Samuel is currently focused on learning about, designing, and developing novel digital experiences that combine technology, education, and archival work to create usable, accessible, easily maintainable user-facing solutions. He is also passionate about his commercial design practice and is always open to collaborating with new people.
+  
   Check out Sam's: 
     * Personal <a href="https://github.com/szgrune" target="_blank">Github</a>
     * <a href="https://www.linkedin.com/in/samuel-grunebaum-60a591198/" target="_blank">LinkedIn</a>
