@@ -69,24 +69,6 @@ export default function Home() {
                 </CardActionArea>
             </Grid>
             <Grid item xs={2} sm={4} md={4}>
-                <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/noranormile")}>
-                    <Card sx={{ borderRadius: 3, padding: 1 }}>
-                        <CardContent>
-                            <CardMedia sx={{ height: 200, borderRadius: 3 }} image={noraImage} />
-                            <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
-                                Nora Normile
-                            </Typography>
-                            <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
-                                Custom artist website
-                            </Typography>
-                            <Typography variant="body1">
-                                Designed and built custom portfolio site for artist Nora Normile. Created Figma mockups and implemented bespoke Squarespace theme.
-                            </Typography>
-                        </CardContent>
-                    </Card>
-                </CardActionArea>
-            </Grid>
-            <Grid item xs={2} sm={4} md={4}>
                 <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/urbancowboy")}>
                     <Card sx={{ borderRadius: 3, padding: 1 }}>
                         <CardContent>
@@ -99,6 +81,24 @@ export default function Home() {
                             </Typography>
                             <Typography variant="body1">
                                 Ongoing project with luxury hotel brand Urban Cowboy + Cowboy Creative Studio. Designing and launching sites across multiple platforms.
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </CardActionArea>
+            </Grid>
+            <Grid item xs={2} sm={4} md={4}>
+                <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/noranormile")}>
+                    <Card sx={{ borderRadius: 3, padding: 1 }}>
+                        <CardContent>
+                            <CardMedia sx={{ height: 200, borderRadius: 3 }} image={noraImage} />
+                            <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
+                                Nora Normile
+                            </Typography>
+                            <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
+                                Custom artist website
+                            </Typography>
+                            <Typography variant="body1">
+                                Designed and built custom portfolio site for artist Nora Normile. Created Figma mockups and implemented bespoke Squarespace theme.
                             </Typography>
                         </CardContent>
                     </Card>

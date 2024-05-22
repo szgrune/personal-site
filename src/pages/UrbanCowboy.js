@@ -40,11 +40,11 @@ const UrbanCowboy = () => {
       img {
         object-fit: contain;
         max-width: 100vw;
-        max-height: 50vh;
+        max-height: 70vh;
       }
       figcaption {
         margin-top: 2vh;
-        max-width: 90vw;
+        max-width: 75vw;
       }
 
       @media only screen and (max-width:600px) {
