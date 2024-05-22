@@ -56,18 +56,18 @@ const UrbanCowboy = () => {
 ### Urban Cowboy Websites
 
 <figure>
-  <img src="./CowboyCreativeHome.gif">
+  <img src="./cowboycreative_index.png">
   <figcaption align="center">
-    Home page for the work-in-progress Cowboy Creative Studio website, featuring selected projects and dropdown navigation. All content uses placeholders.
+    Home page for the recently launched Cowboy Creative Studio website, featuring hero video and copy. This responsive landing page was designed using Figma and implemented with Webflow and custom code.
   </figcaption>
 </figure>
 #### ABSTRACT
 
-In my capacity as UX lead and lead developer for my design studio PG Co alongside my partner George Platt, I am designing and developing multiple work-in-progress websites for the Urban Cowboy boutique hotel and creative consulting brand. Currently this includes the Cowboy Creative Studio website and the Porter Katz real estate brokerage team website. 
+In my capacity as UX lead and lead developer for my UX design and front end development consulting practice alongside my partner George Platt, we have designed and shipped the Urban Cowboy Hotels Creative Studio website, as well as continuing work on additional work-in-progress websites for the brand. 
 
 #### DESIGN & DEVELOPMENT 
 
-We have worked directly with stakeholders to design usable, sleek websites for their brand. Using a mix of templated, CMS websites and custom code injections, we are building updated versions of these websites optimized both for modernity and accessibility and for driving conversions.
+We have worked directly with stakeholders to design usable, sleek websites for their brand. Using a mix of templated CMS websites and custom code injections, we are building updated versions of these websites optimized both for modern responsiveness and accessibility.
 
 <figure>
     <img src="./PorterKatzTeamPageMocks.png">
@@ -81,9 +81,9 @@ For the brokerage team page, we used Squarespace mixed with custom code to creat
 We used Webflow for the Cowboy Creative Studio website, which necessitated balancing a higher degree of customizability and unique interactions with the stakeholder requirement of easy asset swapping and content editing.
 
 <figure>
-    <img src="./CowboyCreativeSplashPage.png">
+    <img src="./cowboycreative_pressslider.png">
     <figcaption align="center">
-        The splash page for the Cowboy Creative Studio website features branded video assets, immediately introducing the user to the brand's identity as they are welcomed to the creative consultancy's website
+        The press slider was a custom code injection Webflow component we created specifically for this project. Urban Cowboy/Cowboy Creative Studio has received a lot of press, necessitating a convenient way to showcase the articles without occupying too much real estate. The solution was to create a custom coded infinite marquee carousel with press logos and links to articles.
     </figcaption>
 </figure>
 
