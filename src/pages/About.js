@@ -80,6 +80,8 @@ function About() {
 </style>
 ### About Me
 
+##### Designer, Developer, Educator
+
 <div id="container">
   <img src="./headshot.png">
 
