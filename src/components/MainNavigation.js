@@ -12,7 +12,7 @@ import Divider from "@mui/material/Divider";
 
 import MaterialUISwitch from "./MaterialUISwitch.js";
 
-import resumePDF from "../img/Samuel Grunebaum CV 2023.pdf";
+import resumePDF from "../img/Samuel Grunebaum Resume June 2024.pdf";
 import { ReactComponent as ExternalLink } from "../img/external-link.svg"
 
 export default function MainNavigation(props) {
