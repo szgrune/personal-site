@@ -33,7 +33,7 @@ function About() {
 <style>
       h3 {
         text-align: left;
-        margin: 5vh 8vw !important;
+        margin: 5vh 8vw 0 !important;
       }
       h4 {
         text-align: left;
@@ -71,8 +71,11 @@ function About() {
 
       @media only screen and (max-width:600px) {
         h3 {
-          margin: 2vh 5vw !important;
+          margin: 2vh 5vw 0 !important;
         }
+        h4 {
+          margin: 2vh 5vw !important;
+        }  
         img {
           width: 90vw;
           margin: 5vh 5vw !important;
