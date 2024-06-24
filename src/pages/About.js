@@ -36,6 +36,7 @@ function About() {
         margin: 5vh 8vw !important;
       }
       h4 {
+        text-align: left;
         margin: 5vh 8vw !important;
       }
       img {
@@ -80,7 +81,7 @@ function About() {
 </style>
 ### About Me
 
-##### Designer, Developer, Educator
+#### Designer, Developer, Educator
 
 <div id="container">
   <img src="./headshot.png">
