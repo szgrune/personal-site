@@ -66,7 +66,7 @@ export default function Home() {
                                     Global natural juice brand based in Japan
                                 </Typography>
                                 <Typography variant="body1">
-                                    UX design lead and solo developer for overhaul redesign of Kimino Drinks website. Optimized site for e-commerce with modular Shopify sections.
+                                    UX design lead and solo developer for overhaul of Kimino Drinks website. Optimized site for DTC e-commerce with modular Shopify sections.
                                 </Typography>
                             </CardContent>
                         </Card>
@@ -84,7 +84,7 @@ export default function Home() {
                                     Boutique hotel chain and creative studio
                                 </Typography>
                                 <Typography variant="body1">
-                                    Ongoing project with luxury hotel brand Urban Cowboy + Cowboy Creative Studio. Designing and launching sites across multiple platforms.
+                                    Ongoing project with luxury hotel brand Urban Cowboy + Cowboy Creative Studio. Creating user facing sites across multiple platforms.
                                 </Typography>
                             </CardContent>
                         </Card>
@@ -120,7 +120,7 @@ export default function Home() {
                                     UX web design collaboration
                                 </Typography>
                                 <Typography variant="body1">
-                                    UX designer for Nan Xiang Express restaurant website redesign and new ABC POS interfaces, in collaboration with Meanwhile Partners.
+                                    UX designer for Nan Xiang Express DTC restaurant website redesign and new ABC POS interfaces, in collaboration with Meanwhile Partners.
                                 </Typography>
                             </CardContent>
                         </Card>
