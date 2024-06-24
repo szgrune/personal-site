@@ -31,7 +31,7 @@ export default function Home() {
     return (
     <div>
         <Typography variant="h3" component="h3" sx={{ textAlign: 'center', marginBottom: '5vh' }}>
-            Designing experiences to serve every customer
+            Designing and building experiences to serve every customer
         </Typography>
         <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'left' , marginLeft: '5vw', marginRight: '5vw'}}>
             {/* rendering the card component with card content */}
