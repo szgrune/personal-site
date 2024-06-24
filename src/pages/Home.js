@@ -120,7 +120,7 @@ export default function Home() {
                                     UX web design collaboration
                                 </Typography>
                                 <Typography variant="body1">
-                                    UX designer for Nan Xiang Express DTC restaurant website redesign and new ABC POS interfaces, in collaboration with Meanwhile Partners.
+                                    UX designer for restaurant group's DTC website redesign and new internal POS interfaces, in collaboration with Meanwhile Partners.
                                 </Typography>
                             </CardContent>
                         </Card>
