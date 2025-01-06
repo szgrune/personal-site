@@ -13,6 +13,7 @@ import Divider from "@mui/material/Divider";
 import MaterialUISwitch from "./MaterialUISwitch.js";
 
 import resumePDF from "../img/Samuel Grunebaum Resume.pdf";
+import portfolioPDF from "../img/Samuel Grunebaum Portfolio (General).pdf";
 import { ReactComponent as ExternalLink } from "../img/external-link.svg"
 
 export default function MainNavigation(props) {
@@ -104,6 +105,11 @@ export default function MainNavigation(props) {
                         <Typography variant="h6" sx={{ cursor: "pointer", textAlign: "center", p: 2 }}>
                             <a style={{color: "inherit", textDecoration: "none"}} href={resumePDF} target="_blank" rel="noreferrer">
                                 cv <ExternalLink style={{display: "inline", width: "1em", height: "0.7em", position: "relative", top: "0.05em"}} />
+                            </a>
+                        </Typography>
+                        <Typography variant="h6" sx={{ cursor: "pointer", textAlign: "center", p: 2 }}>
+                            <a style={{color: "inherit", textDecoration: "none"}} href={portfolioPDF} target="_blank" rel="noreferrer">
+                                portfolio <ExternalLink style={{display: "inline", width: "1em", height: "0.7em", position: "relative", top: "0.05em"}} />
                             </a>
                         </Typography>
                     </Box>
