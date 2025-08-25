@@ -16,6 +16,12 @@ function About() {
             style: { margin: '0vh 8vw 2vh', textAlign: 'left'}
           },
         },
+        ul: {
+          component: 'ul',
+          props: {
+            style: { margin: '0vh 8vw 2vh', textAlign: 'left'}
+          },
+        },
         ol: {
           component: 'ol',
           props: {
