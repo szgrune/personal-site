@@ -19,6 +19,7 @@ import UrbanCowboy from './pages/UrbanCowboy.js';
 import Kimino from './pages/Kimino.js';
 import Meanwhile from './pages/Meanwhile.js';
 import WCMA from './pages/WCMA.js';
+import Infotopia from './pages/Infotopia.js';
 
 export default function App() {
   // state to manage the dark mode
@@ -93,6 +94,7 @@ function Inner() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/infotopia" element={<Infotopia />} />
                 <Route path="/openlibrary" element={<OpenLib />} />
                 <Route path="/noranormile" element={<NoraNormile />} />
                 <Route path="/urbancowboy" element={<UrbanCowboy />} />
