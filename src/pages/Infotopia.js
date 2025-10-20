@@ -37,6 +37,11 @@ const Infotopia = () => {
       h4 {
         margin: 5vh 8vw !important;
       }
+      video {
+        object-fit: contain;
+        max-width: 100vw;
+        max-height: 50vh;
+      }
       img {
         object-fit: contain;
         max-width: 100vw;
@@ -56,7 +61,7 @@ const Infotopia = () => {
 ### Infotopia Data Visualization Project
 
 <figure>
-    <video src="./herotest4k.mov">
+    <video loop src="./herotest4k.mov">
     <figcaption align="center">
         This video depicts the 3D model I built for visualizing the nine online activities as buildings with scales representing population percenttage usage & carbon footprint, as well as surface geometry complexity that visualizes the level of cognitive overload associated with each activity
     </figcaption>
