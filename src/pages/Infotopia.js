@@ -116,10 +116,10 @@ __________
 
 #### Impact & Conclusion
 
-__________
+__________`}
 
 </MuiMarkdown>
   );
 };
   
-export default OpenLib;
+export default Infotopia;
