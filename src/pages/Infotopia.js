@@ -61,7 +61,9 @@ const Infotopia = () => {
 ### Infotopia Data Visualization Project
 
 <figure>
-    <video loop src="./herotest4k.mov">
+    <video autoplay loop>
+      <source src="./herotest4k.mov" type="video/mp4"/>
+    </video>
     <figcaption align="center">
         This video depicts the 3D model I built for visualizing the nine online activities as buildings with scales representing population percenttage usage & carbon footprint, as well as surface geometry complexity that visualizes the level of cognitive overload associated with each activity
     </figcaption>
