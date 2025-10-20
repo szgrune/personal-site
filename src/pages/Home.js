@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 import "../App.css";
 
+import infotopiaImage from "../img/infotopia_hero.png";
 import mybooksImage from "../img/openlibrary.png";
 import noraImage from "../img/nora_platform.png";
 import cowboyCreative from "../img/UClogo.png";
@@ -36,6 +37,24 @@ export default function Home() {
         <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'left' , marginLeft: '5vw', marginRight: '5vw'}}>
             {/* rendering the card component with card content */}
             <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 1, sm: 8, md: 12 }}>
+                <Grid item xs={2} sm={4} md={4}>
+                    <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/infotopia")}>
+                        <Card sx={{ borderRadius: 3, padding: 1 }}>
+                            <CardContent>
+                                <CardMedia sx={{ height: 200, borderRadius: 3 }} image={infotopiaImage} />
+                                <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
+                                Infotopia
+                                </Typography>
+                                <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
+                                Collaborative project at Harvard Graduate School of Design
+                                </Typography>
+                                <Typography variant="body1">
+                                Fall Design Engineering Studio project, in collaboration with Awassada Ariyaphuttarat
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </CardActionArea>
+                </Grid>
                 <Grid item xs={2} sm={4} md={4}>
                     <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/openlibrary")}>
                         <Card sx={{ borderRadius: 3, padding: 1 }}>
