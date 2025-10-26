@@ -25,7 +25,7 @@ const Infotopia = () => {
         figure: {
           component: 'figure',
           props: {
-            style: { display: 'flex', flexDirection: 'column', margin: '5vh auto', alignItems: 'center' }
+            style: { display: 'flex', flexDirection: 'column', margin: '5vh auto', alignItems: 'center', maxWidth: '100vw' }
           }
         }
       }}
@@ -44,8 +44,10 @@ const Infotopia = () => {
       }
       img {
         object-fit: contain;
-        max-width: 100vw;
         max-height: 50vh;
+        min-width: 0;
+        min-height: 0;
+        flex-shrink: 1;
       }
       figcaption {
         margin-top: 2vh;
@@ -61,7 +63,7 @@ const Infotopia = () => {
 ### Infotopia Data Visualization Project
 
 <figure>
-    <video autoplay loop>
+    <video autoplay loop muted>
       <source src="./herotest4k.mov" type="video/mp4"/>
     </video>
     <figcaption align="center">
@@ -71,16 +73,12 @@ const Infotopia = () => {
 
 #### PROBLEM
 
-Our brains evolved for the natural world, yet we now live in artificial environments that strain the limits of our minds.
-
-What are the impacts of information overload on the individual human, societal, and planetary scales?
-
-Infotopia aims to explore how information overload reshapes human cognition, emotion, and perception in the digital age.
+Our brains evolved for the natural world, yet we now live in artificial environments that strain the limits of our minds. What are the impacts of information overload on the individual human, societal, and planetary scales? Infotopia aims to explore how information overload reshapes human cognition, emotion, and perception in the digital age.
 
 For nine of the most popular online activities, we visualized the level of usage within the EU population, cognitive load, and carbon footprint as buildings with an emergent, data-driven architecture.
 
 <figure>
-    <img src="./Frame.png">
+    <img src="./Infotopia Dashboard.png">
     <figcaption align="center">
         Initial view with percent population usage visualized by building height, carbon footprint by building base dimensions, and cognitive overload shown through facade surface geometry
     </figcaption>
@@ -99,8 +97,10 @@ For the skeletal structure of our city visualization, we used Eurostat data on E
 We also used Our World of Data’s EU Carbon Intensity of Electricity for annual CO2/kWh metrics.
 
 <figure>
-    <img src="./Eurostat Online Activity Usage Data.png">
-    <img src="./Carbon Intensity of Electricity Generation EU 2024.png">
+    <div style="display: flex; flex-direction: row; gap: 16px; padding: 32px; max-width: 100vw; min-width: 0">
+      <img src="./Eurostat Online Activity Usage Data.png">
+      <img src="./Carbon Intensity of Electricity Generation EU 2024.png">
+    </div>
     <figcaption align="center">
         Datasets for European Union population usage of our nine online activities & carbon intensity of electricity in EU, used to calculate activity carbon footprint
     </figcaption>
