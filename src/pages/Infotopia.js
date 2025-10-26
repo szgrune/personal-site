@@ -40,7 +40,7 @@ const Infotopia = () => {
       video {
         object-fit: contain;
         max-width: 100vw;
-        max-height: 76vh;
+        max-height: 76 vh;
       }
       img {
         object-fit: contain;
@@ -77,6 +77,8 @@ What are the impacts of information overload on the individual human, societal, 
 
 Infotopia aims to explore how information overload reshapes human cognition, emotion, and perception in the digital age.
 
+For nine of the most popular online activities, we visualized the level of usage within the EU population, cognitive load, and carbon footprint as buildings with an emergent, data-driven architecture.
+
 <figure>
     <img src="./Frame.png">
     <figcaption align="center">
@@ -90,14 +92,17 @@ City metaphor explained:
 1. Natural+Artificial: Cities, like the Internet, are designed constructs that evolve new forms beyond what was planned, shifting with the people who inhabit them.
 1. Umwelt: Our users interrogate their own digital Umwelt – the unique world that they inhabit online – through exploring the metaphorical city of Infotopia.
 
-#### IDEATION & PROTOTYPING
+#### DATASETS, IDEATION, & PROTOTYPING
 
-Add text here explaining data analysis...
+For the skeletal structure of our city visualization, we used Eurostat data on EU usage of our nine online activity categories. 
+
+We also used Our World of Data’s EU Carbon Intensity of Electricity for annual CO2/kWh metrics.
 
 <figure>
-    <img src="./x.png">
+    <img src="./Eurostat Online Activity Usage Data.png">
+    <img src="./Carbon Intensity of Electricity Generation EU 2024.png">
     <figcaption align="center">
-        ______
+        Datasets for European Union population usage of our nine online activities & carbon intensity of electricity in EU, used to calculate activity carbon footprint
     </figcaption>
 </figure>
 
