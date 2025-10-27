@@ -142,7 +142,7 @@ Pictured below are two early stage prototypes and our final 3D building model, g
 <figure>
     <img src="./infotopia_techstack.png">
     <figcaption align="center">
-        Infotopia combines a robust data processing pipeline with a dynamic 3D web visualization built using Grasshopper and Three.js.
+        Infotopia combines a robust data processing pipeline with a dynamic 3D web visualization built using Grasshopper and Three.js. Our video prototype was built on top of our Three.js interface using assets generated in Adobe Creative Suite and Figma.
     </figcaption>
 </figure>
 
