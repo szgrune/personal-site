@@ -90,6 +90,14 @@ City metaphor explained:
 1. Natural+Artificial: Cities, like the Internet, are designed constructs that evolve new forms beyond what was planned, shifting with the people who inhabit them.
 1. Umwelt: Our users interrogate their own digital Umwelt – the unique world that they inhabit online – through exploring the metaphorical city of Infotopia.
 
+#### Video Walkthrough
+
+<figure>
+    <video controls>
+      <source src="./Infotopia.mov" type="video/mp4"/>
+    </video>
+</figure>
+
 #### DATASETS, IDEATION, & PROTOTYPING
 
 For the skeletal structure of our city visualization, we used Eurostat data on EU usage of our nine online activity categories. 
@@ -138,15 +146,13 @@ Pictured below are two early stage prototypes and our final 3D building model, g
     </figcaption>
 </figure>
 
-__________
-
 #### Impact & Conclusion
 
 We reframe the issue of information overload with an interactive and novel visual approach.
 
 Our objective extends beyond the city limits of Infotopia. We envision a global community participating in the city of Infotopia by adding their own building data, their own ethnography observations or insights, and perhaps using this framework to create new neighboring cities representing adjacent issues to the problem of information overload.
 
-__________`}
+`}
 
 </MuiMarkdown>
   );
