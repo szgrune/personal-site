@@ -106,27 +106,45 @@ We also used Our World of Data’s EU Carbon Intensity of Electricity for annual
     </figcaption>
 </figure>
 
-Initial prototypes...
+Pictured below are two early stage prototypes and our final 3D building model, generated using Grasshopper and imported into Three.js where we manipulated the heights and footprint sizes for each year of data.
 
 <figure>
-    <img src="./x.png">
+    <img src="./infotopia_prototype1.png">
     <figcaption align="center">
-        ______
+        Our initial sketch aimed to capture the overwhelming nature of a city as a metaphor for the cognitive overload associated with online activity.
     </figcaption>
 </figure>
 
-#### Tech Stack
+<figure>
+    <img src="./Shorter Pecha Kucha GIF.gif">
+    <figcaption align="center">
+        This prototype generated buildings with each level of a building representing a different year.
+    </figcaption>
+</figure>
 
 <figure>
-    <img src="./x.png">
+    <img src="./infotopia_buildingmodel.png">
     <figcaption align="center">
-        ______
+        This figure shows our 3D Infotopia city model, generated in using Grasshopper to represent the cognitive load associated with different activities by removing pieces of each building's surface geometry. More pieces removed from an activity building signifies a higher level of observed cognitive load from our ethnographies and lit review.
+    </figcaption>
+</figure>
+
+#### Technical Stack and Implementation
+
+<figure>
+    <img src="./infotopia_techstack.png">
+    <figcaption align="center">
+        Infotopia combines a robust data processing pipeline with a dynamic 3D web visualization built using Grasshopper and Three.js.
     </figcaption>
 </figure>
 
 __________
 
 #### Impact & Conclusion
+
+We reframe the issue of information overload with an interactive and novel visual approach.
+
+Our objective extends beyond the city limits of Infotopia. We envision a global community participating in the city of Infotopia by adding their own building data, their own ethnography observations or insights, and perhaps using this framework to create new neighboring cities representing adjacent issues to the problem of information overload.
 
 __________`}
 
