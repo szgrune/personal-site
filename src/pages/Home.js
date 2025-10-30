@@ -33,7 +33,7 @@ export default function Home() {
     <div>
         <Typography variant="h3" component="h3" sx={{ textAlign: 'center', marginBottom: '5vh' }}>
             Designing and building experiences <br/>
-            at the meeting point of technology, culture, and the humanities
+            at the meeting point of technology + culture + the humanities
         </Typography>
         <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'left' , marginLeft: '5vw', marginRight: '5vw'}}>
             {/* rendering the card component with card content */}
