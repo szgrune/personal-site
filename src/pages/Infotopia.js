@@ -94,7 +94,7 @@ City metaphor explained:
 
 <figure>
     <video controls>
-      <source src="./Infotopia.mov" type="video/mp4"/>
+      <source src="./Infotopia.MOV" type="video/mp4"/>
     </video>
 </figure>
 
