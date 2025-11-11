@@ -40,7 +40,7 @@ const Infotopia = () => {
       video {
         object-fit: contain;
         max-width: 100vw;
-        max-height: 76 vh;
+        max-height: 76vh;
       }
       img {
         object-fit: contain;
