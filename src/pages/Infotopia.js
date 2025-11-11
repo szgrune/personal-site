@@ -67,7 +67,7 @@ const Infotopia = () => {
       <source src="./herotest4k.mov" type="video/mp4"/>
     </video>
     <figcaption align="center">
-        This video depicts the 3D model I built for visualizing the nine online activities as buildings with scales representing population percenttage usage & carbon footprint, as well as surface geometry complexity that visualizes the level of cognitive overload associated with each activity
+        This video depicts the 3D model we built for visualizing the nine online activities as buildings with scales representing population percenttage usage & carbon footprint, as well as surface geometry complexity that visualizes the level of cognitive overload associated with each activity
     </figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ Our brains evolved for the natural world, yet we now live in artificial environm
 For nine of the most popular online activities, we visualized the level of usage within the EU population, cognitive load, and carbon footprint as buildings with an emergent, data-driven architecture.
 
 <figure>
-    <img src="./Infotopia Dashboard.png">
+    <img src="./Infotopia Dashboard.png" style="width: 100%">
     <figcaption align="center">
         Initial view with percent population usage visualized by building height, carbon footprint by building base dimensions, and cognitive overload shown through facade surface geometry
     </figcaption>
