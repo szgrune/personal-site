@@ -55,6 +55,7 @@ const Infotopia = () => {
       }
       .wide {
         width: 100%;
+        max-height: 75vh; 
       }
       @media only screen and (max-width:600px) {
         img {
