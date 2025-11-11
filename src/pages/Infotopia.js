@@ -53,7 +53,9 @@ const Infotopia = () => {
         margin-top: 2vh;
         max-width: 90vw;
       }
-
+      .wide {
+        width: 100%;
+      }
       @media only screen and (max-width:600px) {
         img {
           max-height: 90vh;
@@ -78,7 +80,7 @@ Our brains evolved for the natural world, yet we now live in artificial environm
 For nine of the most popular online activities, we visualized the level of usage within the EU population, cognitive load, and carbon footprint as buildings with an emergent, data-driven architecture.
 
 <figure>
-    <img src="./Infotopia Dashboard.png" style="width: 100%">
+    <img class="wide" src="./Infotopia Dashboard.png">
     <figcaption align="center">
         Initial view with percent population usage visualized by building height, carbon footprint by building base dimensions, and cognitive overload shown through facade surface geometry
     </figcaption>
