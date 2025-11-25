@@ -64,8 +64,8 @@ const Infotopia = () => {
       }
 </style>
 ### Infotopia Data Visualization Project
-##### A metaphorical city visualizing impacts of online activity in the European Union: 
-##### Nine buildings representing nine of the most popular online activities are shown with heights scaled to usage, widths scaled to ecological impact, and surface geometry with gaps representing the level of cognitive load and stress associated with each activity.
+###### A metaphorical city visualizing impacts of online activity in the European Union: 
+###### Nine buildings representing nine of the most popular online activities are shown with heights scaled to usage, widths scaled to ecological impact, and surface geometry with gaps representing the level of cognitive load and stress associated with each activity.
 <figure>
     <video autoplay loop muted>
       <source src="./herotest4k.mov" type="video/mp4"/>
