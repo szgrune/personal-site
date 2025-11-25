@@ -37,6 +37,9 @@ const Infotopia = () => {
       h4 {
         margin: 5vh 8vw !important;
       }
+      h6 {
+        margin: 5vh 5vw !important;
+      }
       video {
         object-fit: contain;
         max-width: 100vw;
