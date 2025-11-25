@@ -1,4 +1,4 @@
-//OpenLibrary.js
+//Infotopia.js
 
 import React from "react";
 import { MuiMarkdown, getOverrides } from 'mui-markdown';
