@@ -37,7 +37,7 @@ const Infotopia = () => {
       h4 {
         margin: 5vh 8vw !important;
       }
-      h6 {
+      .App h6 {
         margin: 0vh 8vw !important;
         text-align: left;
       }
