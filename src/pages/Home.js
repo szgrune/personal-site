@@ -1,12 +1,13 @@
 //Home.js
 
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Grid from '@mui/material/Grid';
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 import "../App.css";
 
+import biobuoyImage from "../img/biobuoy_card.png";
 import infotopiaImage from "../img/infotopia_hero.png";
 import mybooksImage from "../img/openlibrary.png";
 import noraImage from "../img/nora_platform.png";
@@ -14,10 +15,67 @@ import cowboyCreative from "../img/UClogo.png";
 import kiminoLanding from "../img/kimino-landing.png";
 import meanwhileImage from "../img/meanwhile_partners.png";
 import wcmaImage from "../img/wcma_illustration.png";
+import willaGif from "../img/willa_gif.gif";
+
+function WillaGifImage({ willaGif, isHovering }) {
+    const imgRef = useRef(null);
+    const staticFrameRef = useRef(null);
+
+    useEffect(() => {
+        if (imgRef.current) {
+            if (isHovering) {
+                // Show animated GIF and restart animation on hover
+                imgRef.current.src = `${willaGif}?t=${Date.now()}`;
+            } else {
+                // When not hovering, show static first frame if available
+                if (staticFrameRef.current) {
+                    imgRef.current.src = staticFrameRef.current;
+                } else {
+                    // Extract first frame on first load
+                    const img = new Image();
+                    img.onload = function() {
+                        try {
+                            const canvas = document.createElement('canvas');
+                            canvas.width = this.naturalWidth || this.width;
+                            canvas.height = this.naturalHeight || this.height;
+                            const ctx = canvas.getContext('2d');
+                            ctx.drawImage(this, 0, 0);
+                            const dataUrl = canvas.toDataURL('image/png');
+                            staticFrameRef.current = dataUrl;
+                            if (imgRef.current && !isHovering) {
+                                imgRef.current.src = dataUrl;
+                            }
+                        } catch (e) {
+                            // If extraction fails, just use the GIF
+                            staticFrameRef.current = willaGif;
+                        }
+                    };
+                    img.src = willaGif;
+                }
+            }
+        }
+    }, [isHovering, willaGif]);
+
+    return (
+        <img 
+            ref={imgRef}
+            src={willaGif}
+            alt="Willa Cosinuke"
+            style={{
+                width: '100%',
+                height: 200,
+                objectFit: 'cover',
+                display: 'block'
+            }}
+        />
+    );
+}
 
 export default function Home() {
 
     let navigate = useNavigate();
+    const [biobuoyHover, setBiobuoyHover] = useState(false);
+    const [willaHover, setWillaHover] = useState(false);
 
     const delay = ms => new Promise(
         resolve => setTimeout(resolve, ms)
@@ -38,6 +96,46 @@ export default function Home() {
         <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'left' , marginLeft: '5vw', marginRight: '5vw'}}>
             {/* rendering the card component with card content */}
             <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 1, sm: 8, md: 12 }}>
+                <Grid item xs={2} sm={4} md={4}>
+                    <Card 
+                        sx={{ 
+                            borderRadius: 3, 
+                            padding: 1,
+                            position: 'relative'
+                        }}
+                        onMouseEnter={() => setBiobuoyHover(true)}
+                        onMouseLeave={() => setBiobuoyHover(false)}
+                    >
+                        <CardContent>
+                            <CardMedia sx={{ height: 200, borderRadius: 3 }} image={biobuoyImage} />
+                            <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
+                                BioBuoy
+                            </Typography>
+                            <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
+                                Mycelium and metal-reducing microbes for waterway bioremediation
+                            </Typography>
+                            <Typography variant="body1">
+                                Speculative design project in collaboration with Avantika Velho and Jake Tan
+                            </Typography>
+                            {biobuoyHover && (
+                                <Typography 
+                                    variant="body1" 
+                                    sx={{ 
+                                        position: 'absolute',
+                                        bottom: 16,
+                                        right: 16,
+                                        backgroundColor: (theme) => theme.palette.background.default,
+                                        padding: '8px 12px',
+                                        borderRadius: 2,
+                                        boxShadow: '0 2px 8px rgba(0,0,0,0.15)'
+                                    }}
+                                >
+                                    Coming soon
+                                </Typography>
+                            )}
+                        </CardContent>
+                    </Card>
+                </Grid>
                 <Grid item xs={2} sm={4} md={4}>
                     <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/infotopia")}>
                         <Card sx={{ borderRadius: 3, padding: 1 }}>
@@ -109,6 +207,48 @@ export default function Home() {
                             </CardContent>
                         </Card>
                     </CardActionArea>
+                </Grid>
+                <Grid item xs={2} sm={4} md={4}>
+                    <Card 
+                        sx={{ 
+                            borderRadius: 3, 
+                            padding: 1,
+                            position: 'relative'
+                        }}
+                        onMouseEnter={() => setWillaHover(true)}
+                        onMouseLeave={() => setWillaHover(false)}
+                    >
+                        <CardContent>
+                            <div style={{ height: 200, borderRadius: 12, overflow: 'hidden' }}>
+                                <WillaGifImage willaGif={willaGif} isHovering={willaHover} />
+                            </div>
+                            <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
+                                Willa Cosinuke
+                            </Typography>
+                            <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
+                                Custom artist website and motion graphics
+                            </Typography>
+                            <Typography variant="body1">
+                                Designed and built custom WordPress site for painter Willa Cosinuke
+                            </Typography>
+                            {willaHover && (
+                                <Typography 
+                                    variant="body1" 
+                                    sx={{ 
+                                        position: 'absolute',
+                                        bottom: 16,
+                                        right: 16,
+                                        backgroundColor: (theme) => theme.palette.background.default,
+                                        padding: '8px 12px',
+                                        borderRadius: 2,
+                                        boxShadow: '0 2px 8px rgba(0,0,0,0.15)'
+                                    }}
+                                >
+                                    Coming soon
+                                </Typography>
+                            )}
+                        </CardContent>
+                    </Card>
                 </Grid>
                 <Grid item xs={2} sm={4} md={4}>
                     <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/noranormile")}>

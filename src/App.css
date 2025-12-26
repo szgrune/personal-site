@@ -27,6 +27,30 @@ h3 > a {
   height: 100%;
 }
 
+/* Ensure all card wrapper classes have height: 100% for equal card heights */
+.MuiPaper-root,
+.MuiButtonBase-root,
+.MuiCardActionArea-root,
+.MuiCard-root {
+  height: 100% !important;
+}
+
+/* Ensure CardContent uses flexbox for proper layout */
+.MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Ensure Grid items stretch to full height */
+.MuiGrid-item {
+  display: flex;
+}
+
+.MuiGrid-item > * {
+  width: 100%;
+}
+
 .fade-enter.fade-enter-active {
   opacity: 1;
   transition: opacity 300ms;
