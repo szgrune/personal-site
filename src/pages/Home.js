@@ -9,6 +9,7 @@ import "../App.css";
 
 import biobuoyImage from "../img/biobuoy_card.png";
 import infotopiaImage from "../img/infotopia_hero.png";
+import infotopiaVideo from "../img/Infotopia_demo.mov";
 import mybooksImage from "../img/openlibrary.png";
 import noraImage from "../img/nora_platform.png";
 import cowboyCreative from "../img/UClogo.png";
@@ -16,6 +17,105 @@ import kiminoLanding from "../img/kimino-landing.png";
 import meanwhileImage from "../img/meanwhile_partners.png";
 import wcmaImage from "../img/wcma_illustration.png";
 import willaGif from "../img/willa_gif.gif";
+
+function InfotopiaVideo({ videoSrc, isHovering }) {
+    const videoRef = useRef(null);
+    const [isMobile, setIsMobile] = useState(false);
+    const [posterUrl, setPosterUrl] = useState(null);
+    const frameExtracted = useRef(false);
+
+    // Check if device is mobile/touch
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.matchMedia('(max-width: 768px)').matches || 'ontouchstart' in window);
+        };
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
+    // Extract first frame as poster
+    useEffect(() => {
+        if (videoRef.current && !frameExtracted.current) {
+            const video = videoRef.current;
+            
+            const extractFrame = () => {
+                try {
+                    video.currentTime = 0.1;
+                } catch (e) {
+                    // If seeking fails, try without seeking
+                }
+            };
+
+            const captureFrame = () => {
+                if (frameExtracted.current) return;
+                try {
+                    const canvas = document.createElement('canvas');
+                    canvas.width = video.videoWidth || 800;
+                    canvas.height = video.videoHeight || 600;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(video, 0, 0);
+                    const dataUrl = canvas.toDataURL('image/png');
+                    setPosterUrl(dataUrl);
+                    frameExtracted.current = true;
+                } catch (e) {
+                    // If extraction fails, video will use its default poster behavior
+                }
+            };
+
+            video.addEventListener('loadedmetadata', extractFrame);
+            video.addEventListener('seeked', captureFrame);
+            video.addEventListener('loadeddata', captureFrame);
+
+            return () => {
+                video.removeEventListener('loadedmetadata', extractFrame);
+                video.removeEventListener('seeked', captureFrame);
+                video.removeEventListener('loadeddata', captureFrame);
+            };
+        }
+    }, []);
+
+    // Control video playback
+    useEffect(() => {
+        if (videoRef.current && !isMobile) {
+            if (isHovering) {
+                videoRef.current.play().catch(e => {
+                    // Video play failed, likely autoplay restrictions
+                });
+            } else {
+                videoRef.current.pause();
+                if (videoRef.current.readyState >= 2) {
+                    videoRef.current.currentTime = 0; // Reset to first frame
+                }
+            }
+        } else if (videoRef.current && isMobile) {
+            // On mobile, always pause and show first frame
+            videoRef.current.pause();
+            if (videoRef.current.readyState >= 2) {
+                videoRef.current.currentTime = 0;
+            }
+        }
+    }, [isHovering, isMobile]);
+
+    return (
+        <video
+            ref={videoRef}
+            src={videoSrc}
+            poster={posterUrl || undefined}
+            style={{
+                width: '100%',
+                height: 200,
+                objectFit: 'cover',
+                display: 'block',
+                borderRadius: 12
+            }}
+            muted
+            loop
+            playsInline
+            preload="metadata"
+        />
+    );
+}
 
 function WillaGifImage({ willaGif, isHovering }) {
     const imgRef = useRef(null);
@@ -76,6 +176,7 @@ export default function Home() {
     let navigate = useNavigate();
     const [biobuoyHover, setBiobuoyHover] = useState(false);
     const [willaHover, setWillaHover] = useState(false);
+    const [infotopiaHover, setInfotopiaHover] = useState(false);
 
     const delay = ms => new Promise(
         resolve => setTimeout(resolve, ms)
@@ -96,6 +197,68 @@ export default function Home() {
         <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'left' , marginLeft: '5vw', marginRight: '5vw'}}>
             {/* rendering the card component with card content */}
             <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 1, sm: 8, md: 12 }}>
+                <Grid item xs={2} sm={4} md={4}>
+                    <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/kimino")}>
+                        <Card sx={{ borderRadius: 3, padding: 1 }}>
+                            <CardContent>
+                                <CardMedia sx={{ height: 200, borderRadius: 3 }} image={kiminoLanding} />
+                                <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
+                                    Kimino Drinks
+                                </Typography>
+                                <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
+                                    Global natural juice brand based in Japan
+                                </Typography>
+                                <Typography variant="body1">
+                                    UX design lead and solo developer for overhaul of Kimino Drinks website. Optimized site for DTC e-commerce with modular Shopify sections.
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </CardActionArea>
+                </Grid>
+                <Grid item xs={2} sm={4} md={4}>
+                    <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/openlibrary")}>
+                        <Card sx={{ borderRadius: 3, padding: 1 }}>
+                            <CardContent>
+                                <CardMedia sx={{ height: 200, borderRadius: 3 }} image={mybooksImage} />
+                                <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
+                                Open Library
+                                </Typography>
+                                <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
+                                In conjunction with Internet Archive
+                                </Typography>
+                                <Typography variant="body1">
+                                Since June 2022, I have contributed new page designs and code as a fellow with Open Library, a project from Internet Archive. 
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </CardActionArea>
+                </Grid>
+                <Grid item xs={2} sm={4} md={4}>
+                    <CardActionArea 
+                        sx={{ borderRadius: 3 }} 
+                        button 
+                        onClick={() => redirectRoute("/infotopia")}
+                        onMouseEnter={() => setInfotopiaHover(true)}
+                        onMouseLeave={() => setInfotopiaHover(false)}
+                    >
+                        <Card sx={{ borderRadius: 3, padding: 1 }}>
+                            <CardContent>
+                                <div style={{ height: 200, borderRadius: 12, overflow: 'hidden' }}>
+                                    <InfotopiaVideo videoSrc={infotopiaVideo} isHovering={infotopiaHover} />
+                                </div>
+                                <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
+                                Infotopia
+                                </Typography>
+                                <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
+                                Collaborative project at Harvard Graduate School of Design
+                                </Typography>
+                                <Typography variant="body1">
+                                Fall Design Engineering Studio project, in collaboration with Awassada Ariyaphuttarat
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </CardActionArea>
+                </Grid>
                 <Grid item xs={2} sm={4} md={4}>
                     <Card 
                         sx={{ 
@@ -135,60 +298,6 @@ export default function Home() {
                             )}
                         </CardContent>
                     </Card>
-                </Grid>
-                <Grid item xs={2} sm={4} md={4}>
-                    <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/infotopia")}>
-                        <Card sx={{ borderRadius: 3, padding: 1 }}>
-                            <CardContent>
-                                <CardMedia sx={{ height: 200, borderRadius: 3 }} image={infotopiaImage} />
-                                <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
-                                Infotopia
-                                </Typography>
-                                <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
-                                Collaborative project at Harvard Graduate School of Design
-                                </Typography>
-                                <Typography variant="body1">
-                                Fall Design Engineering Studio project, in collaboration with Awassada Ariyaphuttarat
-                                </Typography>
-                            </CardContent>
-                        </Card>
-                    </CardActionArea>
-                </Grid>
-                <Grid item xs={2} sm={4} md={4}>
-                    <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/openlibrary")}>
-                        <Card sx={{ borderRadius: 3, padding: 1 }}>
-                            <CardContent>
-                                <CardMedia sx={{ height: 200, borderRadius: 3 }} image={mybooksImage} />
-                                <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
-                                Open Library
-                                </Typography>
-                                <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
-                                In conjunction with Internet Archive
-                                </Typography>
-                                <Typography variant="body1">
-                                Since June 2022, I have contributed new page designs and code as a fellow with Open Library, a project from Internet Archive. 
-                                </Typography>
-                            </CardContent>
-                        </Card>
-                    </CardActionArea>
-                </Grid>
-                <Grid item xs={2} sm={4} md={4}>
-                    <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/kimino")}>
-                        <Card sx={{ borderRadius: 3, padding: 1 }}>
-                            <CardContent>
-                                <CardMedia sx={{ height: 200, borderRadius: 3 }} image={kiminoLanding} />
-                                <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
-                                    Kimino Drinks
-                                </Typography>
-                                <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
-                                    Global natural juice brand based in Japan
-                                </Typography>
-                                <Typography variant="body1">
-                                    UX design lead and solo developer for overhaul of Kimino Drinks website. Optimized site for DTC e-commerce with modular Shopify sections.
-                                </Typography>
-                            </CardContent>
-                        </Card>
-                    </CardActionArea>
                 </Grid>
                 <Grid item xs={2} sm={4} md={4}>
                     <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/urbancowboy")}>
