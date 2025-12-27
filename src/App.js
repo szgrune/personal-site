@@ -46,7 +46,7 @@ export default function App() {
         fontFamily: 'Folio Book, Helvetica, Arial, sans-serif',
       },
       h5: {
-        fontFamily: 'DeAetna, sans-serif',
+        fontFamily: 'Coolvetica, sans-serif',
         fontSize: '1.5rem !important',
         letterSpacing: '0.05em !important',
       },
@@ -54,13 +54,13 @@ export default function App() {
         fontFamily: 'Coolvetica, sans-serif',
       },
       h3: {
-        fontFamily: 'Coolvetica, sans-serif'
+        fontFamily: 'Coolvetica, sans-serif',
       },
       subtitle1: {
-        fontFamily: 'Noto Sans',
+        fontFamily: 'Folio Book, sans-serif',
       },
       body1: {
-        fontFamily: 'Folio Book',
+        fontFamily: 'Folio Book, sans-serif',
         fontWeight: '300',
       },
     }
