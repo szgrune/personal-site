@@ -25,6 +25,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#003892' : '#001e3c',
     width: 32,
     height: 32,
+    borderRadius: '50%',
     '&:before': {
       content: "''",
       position: 'absolute',
@@ -32,6 +33,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
       height: '100%',
       left: 0,
       top: 0,
+      borderRadius: '50%',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
       backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20"><path fill="${encodeURIComponent(

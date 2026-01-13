@@ -29,10 +29,15 @@ h3 > a {
 
 /* Ensure all card wrapper classes have height: 100% for equal card heights */
 .MuiPaper-root,
-.MuiButtonBase-root,
 .MuiCardActionArea-root,
 .MuiCard-root {
   height: 100% !important;
+  border-radius: 0 !important;
+}
+
+/* Button base components should have rounded corners */
+.MuiButtonBase-root {
+  border-radius: 50% !important;
 }
 
 /* Ensure CardContent uses flexbox for proper layout */
@@ -40,6 +45,24 @@ h3 > a {
   display: flex;
   flex-direction: column;
   height: 100%;
+  border-radius: 0 !important;
+}
+
+/* Allow border-radius on Switch components */
+.MuiSwitch-root {
+  border-radius: 10px !important;
+}
+
+.MuiSwitch-track {
+  border-radius: 10px !important;
+}
+
+.MuiSwitch-thumb {
+  border-radius: 50% !important;
+}
+
+.MuiSwitch-thumb:before {
+  border-radius: 50% !important;
 }
 
 /* Ensure Grid items stretch to full height */

@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import Grid from '@mui/material/Grid';
-import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
+import { Box, Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 import "../App.css";
@@ -107,7 +107,7 @@ function InfotopiaVideo({ videoSrc, isHovering }) {
                 height: 200,
                 objectFit: 'cover',
                 display: 'block',
-                borderRadius: 12
+                borderRadius: 0
             }}
             muted
             loop
@@ -198,63 +198,69 @@ export default function Home() {
             {/* rendering the card component with card content */}
             <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 1, sm: 8, md: 12 }}>
                 <Grid item xs={2} sm={4} md={4}>
-                    <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/kimino")}>
-                        <Card sx={{ borderRadius: 3, padding: 1 }}>
-                            <CardContent>
-                                <CardMedia sx={{ height: 200, borderRadius: 3 }} image={kiminoLanding} />
-                                <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
-                                    Kimino Drinks
-                                </Typography>
-                                <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
-                                    Global natural juice brand based in Japan
-                                </Typography>
-                                <Typography variant="body1">
-                                    UX design lead and solo developer for overhaul of Kimino Drinks website. Optimized site for DTC e-commerce with modular Shopify sections.
-                                </Typography>
+                    <CardActionArea sx={{ borderRadius: 0 }} button onClick={() => redirectRoute("/kimino")}>
+                        <Card sx={{ borderRadius: 0 }}>
+                            <CardContent sx={{ padding: 0 }}>
+                                <CardMedia sx={{ height: 200, borderRadius: 0 }} image={kiminoLanding} />
+                                <Box sx={{ padding: '16px 24px 24px 24px' }}>
+                                    <Typography variant="h4" component="div">
+                                        Kimino Drinks
+                                    </Typography>
+                                    <Typography variant="subtitle1" color="text.secondary">
+                                        Global natural juice brand based in Japan
+                                    </Typography>
+                                    <Typography variant="body1">
+                                        UX design lead and solo developer for overhaul of Kimino Drinks website. Optimized site for DTC e-commerce with modular Shopify sections.
+                                    </Typography>
+                                </Box>
                             </CardContent>
                         </Card>
                     </CardActionArea>
                 </Grid>
                 <Grid item xs={2} sm={4} md={4}>
-                    <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/openlibrary")}>
-                        <Card sx={{ borderRadius: 3, padding: 1 }}>
-                            <CardContent>
-                                <CardMedia sx={{ height: 200, borderRadius: 3 }} image={mybooksImage} />
-                                <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
-                                Open Library
-                                </Typography>
-                                <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
-                                In conjunction with Internet Archive
-                                </Typography>
-                                <Typography variant="body1">
-                                Since June 2022, I have contributed new page designs and code as a fellow with Open Library, a project from Internet Archive. 
-                                </Typography>
+                    <CardActionArea sx={{ borderRadius: 0 }} button onClick={() => redirectRoute("/openlibrary")}>
+                        <Card sx={{ borderRadius: 0 }}>
+                            <CardContent sx={{ padding: 0 }}>
+                                <CardMedia sx={{ height: 200, borderRadius: 0 }} image={mybooksImage} />
+                                <Box sx={{ padding: '16px 24px 24px 24px' }}>
+                                    <Typography variant="h4" component="div">
+                                        Open Library
+                                    </Typography>
+                                    <Typography variant="subtitle1" color="text.secondary">
+                                        In conjunction with Internet Archive
+                                    </Typography>
+                                    <Typography variant="body1">
+                                        Since June 2022, I have contributed new page designs and code as a fellow with Open Library, a project from Internet Archive. 
+                                    </Typography>
+                                </Box>
                             </CardContent>
                         </Card>
                     </CardActionArea>
                 </Grid>
                 <Grid item xs={2} sm={4} md={4}>
                     <CardActionArea 
-                        sx={{ borderRadius: 3 }} 
+                        sx={{ borderRadius: 0 }} 
                         button 
                         onClick={() => redirectRoute("/infotopia")}
                         onMouseEnter={() => setInfotopiaHover(true)}
                         onMouseLeave={() => setInfotopiaHover(false)}
                     >
-                        <Card sx={{ borderRadius: 3, padding: 1 }}>
-                            <CardContent>
-                                <div style={{ height: 200, borderRadius: 12, overflow: 'hidden' }}>
+                        <Card sx={{ borderRadius: 0 }}>
+                            <CardContent sx={{ padding: 0 }}>
+                                <div style={{ height: 200, borderRadius: 0, overflow: 'hidden' }}>
                                     <InfotopiaVideo videoSrc={infotopiaVideo} isHovering={infotopiaHover} />
                                 </div>
-                                <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
-                                Infotopia
-                                </Typography>
-                                <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
-                                Collaborative project at Harvard Graduate School of Design
-                                </Typography>
-                                <Typography variant="body1">
-                                Fall Design Engineering Studio project, in collaboration with Awassada Ariyaphuttarat
-                                </Typography>
+                                <Box sx={{ padding: '16px 24px 24px 24px' }}>
+                                    <Typography variant="h4" component="div">
+                                        Infotopia
+                                    </Typography>
+                                    <Typography variant="subtitle1" color="text.secondary">
+                                        Collaborative project at Harvard Graduate School of Design
+                                    </Typography>
+                                    <Typography variant="body1">
+                                        Fall Design Engineering Studio project, in collaboration with Awassada Ariyaphuttarat
+                                    </Typography>
+                                </Box>
                             </CardContent>
                         </Card>
                     </CardActionArea>
@@ -262,24 +268,25 @@ export default function Home() {
                 <Grid item xs={2} sm={4} md={4}>
                     <Card 
                         sx={{ 
-                            borderRadius: 3, 
-                            padding: 1,
+                            borderRadius: 0,
                             position: 'relative'
                         }}
                         onMouseEnter={() => setBiobuoyHover(true)}
                         onMouseLeave={() => setBiobuoyHover(false)}
                     >
-                        <CardContent>
-                            <CardMedia sx={{ height: 200, borderRadius: 3 }} image={biobuoyImage} />
-                            <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
-                                BioBuoy
-                            </Typography>
-                            <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
-                                Mycelium and metal-reducing microbes for waterway bioremediation
-                            </Typography>
-                            <Typography variant="body1">
-                                Speculative design project in collaboration with Avantika Velho and Jake Tan
-                            </Typography>
+                        <CardContent sx={{ padding: 0 }}>
+                            <CardMedia sx={{ height: 200, borderRadius: 0 }} image={biobuoyImage} />
+                            <Box sx={{ padding: '16px 24px 24px 24px' }}>
+                                <Typography variant="h4" component="div">
+                                    BioBuoy
+                                </Typography>
+                                <Typography variant="subtitle1" color="text.secondary">
+                                    Mycelium and metal-reducing microbes for waterway bioremediation
+                                </Typography>
+                                <Typography variant="body1">
+                                    Speculative design project in collaboration with Avantika Velho and Jake Tan
+                                </Typography>
+                            </Box>
                             {biobuoyHover && (
                                 <Typography 
                                     variant="body1" 
@@ -289,7 +296,7 @@ export default function Home() {
                                         right: 16,
                                         backgroundColor: (theme) => theme.palette.background.default,
                                         padding: '8px 12px',
-                                        borderRadius: 2,
+                                        borderRadius: 0,
                                         boxShadow: '0 2px 8px rgba(0,0,0,0.15)'
                                     }}
                                 >
@@ -300,19 +307,21 @@ export default function Home() {
                     </Card>
                 </Grid>
                 <Grid item xs={2} sm={4} md={4}>
-                    <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/urbancowboy")}>
-                        <Card sx={{ borderRadius: 3, padding: 1 }}>
-                            <CardContent>
-                                <CardMedia sx={{ objectFit: 'contain', height: 200, borderRadius: 3, backgroundColor: 'black' }} image={cowboyCreative} />
-                                <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
-                                    Urban Cowboy
-                                </Typography>
-                                <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
-                                    Boutique hotel chain and creative studio
-                                </Typography>
-                                <Typography variant="body1">
-                                    Ongoing project with luxury hotel brand Urban Cowboy + Cowboy Creative Studio. Creating user facing sites across multiple platforms.
-                                </Typography>
+                    <CardActionArea sx={{ borderRadius: 0 }} button onClick={() => redirectRoute("/urbancowboy")}>
+                        <Card sx={{ borderRadius: 0 }}>
+                            <CardContent sx={{ padding: 0 }}>
+                                <CardMedia sx={{ objectFit: 'contain', height: 200, borderRadius: 0, backgroundColor: 'black' }} image={cowboyCreative} />
+                                <Box sx={{ padding: '16px 24px 24px 24px' }}>
+                                    <Typography variant="h4" component="div">
+                                        Urban Cowboy
+                                    </Typography>
+                                    <Typography variant="subtitle1" color="text.secondary">
+                                        Boutique hotel chain and creative studio
+                                    </Typography>
+                                    <Typography variant="body1">
+                                        Ongoing project with luxury hotel brand Urban Cowboy + Cowboy Creative Studio. Creating user facing sites across multiple platforms.
+                                    </Typography>
+                                </Box>
                             </CardContent>
                         </Card>
                     </CardActionArea>
@@ -320,26 +329,27 @@ export default function Home() {
                 <Grid item xs={2} sm={4} md={4}>
                     <Card 
                         sx={{ 
-                            borderRadius: 3, 
-                            padding: 1,
+                            borderRadius: 0,
                             position: 'relative'
                         }}
                         onMouseEnter={() => setWillaHover(true)}
                         onMouseLeave={() => setWillaHover(false)}
                     >
-                        <CardContent>
-                            <div style={{ height: 200, borderRadius: 12, overflow: 'hidden' }}>
+                        <CardContent sx={{ padding: 0 }}>
+                            <div style={{ height: 200, borderRadius: 0, overflow: 'hidden' }}>
                                 <WillaGifImage willaGif={willaGif} isHovering={willaHover} />
                             </div>
-                            <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
-                                Willa Cosinuke
-                            </Typography>
-                            <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
-                                Custom artist website and motion graphics
-                            </Typography>
-                            <Typography variant="body1">
-                                Designed and built custom WordPress site for painter Willa Cosinuke
-                            </Typography>
+                            <Box sx={{ padding: '16px 24px 24px 24px' }}>
+                                <Typography variant="h4" component="div">
+                                    Willa Cosinuke
+                                </Typography>
+                                <Typography variant="subtitle1" color="text.secondary">
+                                    Custom artist website and motion graphics
+                                </Typography>
+                                <Typography variant="body1">
+                                    Designed and built custom WordPress site for painter Willa Cosinuke
+                                </Typography>
+                            </Box>
                             {willaHover && (
                                 <Typography 
                                     variant="body1" 
@@ -349,7 +359,7 @@ export default function Home() {
                                         right: 16,
                                         backgroundColor: (theme) => theme.palette.background.default,
                                         padding: '8px 12px',
-                                        borderRadius: 2,
+                                        borderRadius: 0,
                                         boxShadow: '0 2px 8px rgba(0,0,0,0.15)'
                                     }}
                                 >
@@ -360,55 +370,61 @@ export default function Home() {
                     </Card>
                 </Grid>
                 <Grid item xs={2} sm={4} md={4}>
-                    <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/noranormile")}>
-                        <Card sx={{ borderRadius: 3, padding: 1 }}>
-                            <CardContent>
-                                <CardMedia sx={{ height: 200, borderRadius: 3 }} image={noraImage} />
-                                <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
-                                    Nora Normile
-                                </Typography>
-                                <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
-                                    Custom artist website
-                                </Typography>
-                                <Typography variant="body1">
-                                    Designed and built custom portfolio site for artist Nora Normile. Created Figma mockups and implemented bespoke Squarespace theme.
-                                </Typography>
+                    <CardActionArea sx={{ borderRadius: 0 }} button onClick={() => redirectRoute("/noranormile")}>
+                        <Card sx={{ borderRadius: 0 }}>
+                            <CardContent sx={{ padding: 0 }}>
+                                <CardMedia sx={{ height: 200, borderRadius: 0 }} image={noraImage} />
+                                <Box sx={{ padding: '16px 24px 24px 24px' }}>
+                                    <Typography variant="h4" component="div">
+                                        Nora Normile
+                                    </Typography>
+                                    <Typography variant="subtitle1" color="text.secondary">
+                                        Custom artist website
+                                    </Typography>
+                                    <Typography variant="body1">
+                                        Designed and built custom portfolio site for artist Nora Normile. Created Figma mockups and implemented bespoke Squarespace theme.
+                                    </Typography>
+                                </Box>
                             </CardContent>
                         </Card>
                     </CardActionArea>
                 </Grid>
                 <Grid item xs={2} sm={4} md={4}>
-                    <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/meanwhile")}>
-                        <Card sx={{ borderRadius: 3, padding: 1 }}>
-                            <CardContent>
-                                <CardMedia sx={{ height: 200, borderRadius: 3 }} image={meanwhileImage} />
-                                <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
-                                    Meanwhile Partners
-                                </Typography>
-                                <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
-                                    UX web design collaboration
-                                </Typography>
-                                <Typography variant="body1">
-                                    UX designer for restaurant group's DTC website redesign and new internal POS interfaces, in collaboration with Meanwhile Partners.
-                                </Typography>
+                    <CardActionArea sx={{ borderRadius: 0 }} button onClick={() => redirectRoute("/meanwhile")}>
+                        <Card sx={{ borderRadius: 0 }}>
+                            <CardContent sx={{ padding: 0 }}>
+                                <CardMedia sx={{ height: 200, borderRadius: 0 }} image={meanwhileImage} />
+                                <Box sx={{ padding: '16px 24px 24px 24px' }}>
+                                    <Typography variant="h4" component="div">
+                                        Meanwhile Partners
+                                    </Typography>
+                                    <Typography variant="subtitle1" color="text.secondary">
+                                        UX web design collaboration
+                                    </Typography>
+                                    <Typography variant="body1">
+                                        UX designer for restaurant group's DTC website redesign and new internal POS interfaces, in collaboration with Meanwhile Partners.
+                                    </Typography>
+                                </Box>
                             </CardContent>
                         </Card>
                     </CardActionArea>
                 </Grid>
                 <Grid item xs={2} sm={4} md={4}>
-                    <CardActionArea sx={{ borderRadius: 3 }} button onClick={() => redirectRoute("/wcma")}>
-                        <Card sx={{ borderRadius: 3, padding: 1 }}>
-                            <CardContent>
-                                <CardMedia sx={{ height: 200, borderRadius: 3, backgroundPositionY: "-10px" }} image={wcmaImage} />
-                                <Typography variant="h4" component="div" sx={{ marginTop: 3 }}>
-                                    WCMA
-                                </Typography>
-                                <Typography variant="subtitle1" sx={{ mb: 1.5 }} color="text.secondary">
-                                    UX design at Williams College Museum of Art
-                                </Typography>
-                                <Typography variant="body1">
-                                    Undergraduate design research and prototyping project for wayfinding solutions; Agent for Creative action with visitor engagement office
-                                </Typography>
+                    <CardActionArea sx={{ borderRadius: 0 }} button onClick={() => redirectRoute("/wcma")}>
+                        <Card sx={{ borderRadius: 0 }}>
+                            <CardContent sx={{ padding: 0 }}>
+                                <CardMedia sx={{ height: 200, borderRadius: 0, backgroundPositionY: "-10px" }} image={wcmaImage} />
+                                <Box sx={{ padding: '16px 24px 24px 24px' }}>
+                                    <Typography variant="h4" component="div">
+                                        WCMA
+                                    </Typography>
+                                    <Typography variant="subtitle1" color="text.secondary">
+                                        UX design at Williams College Museum of Art
+                                    </Typography>
+                                    <Typography variant="body1">
+                                        Undergraduate design research and prototyping project for wayfinding solutions; Agent for Creative action with visitor engagement office
+                                    </Typography>
+                                </Box>
                             </CardContent>
                         </Card>
                     </CardActionArea>
