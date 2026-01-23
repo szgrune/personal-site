@@ -96,7 +96,9 @@ function About() {
   <img src="./headshot.png">
 
   <div>
-  Samuel Grunebaum studied Computer Science and Comparative Literature at Williams College. Since then, he has worked as an educator, developer, and designer for institutions such as Fulbright, the Horace Mann School, and the Internet Archive’s Open Library, as well as numerous private clients. 
+  Samuel Grunebaum is a technologist, designer, entrepreneur, and educator from New York City. He is currently pursuing a Master of Design Engineering degree at the Harvard University Graduate School of Design, expecting to graduate in Spring 2027. At Harvard, Samuel is collaborating with the Loeb Library to produce a more robust, accessible set of student guide resources and working with the Harvard metaLAB to design and build critical AI education tools for teachers and learners. 
+  
+  Samuel studied Computer Science and Comparative Literature at Williams College. Since then, he has worked as an educator, developer, and designer for institutions such as Fulbright, the Horace Mann School, and the Internet Archive’s Open Library, as well as numerous private clients. 
 
   Samuel is currently focused on learning about, designing, and developing novel digital experiences that combine technology, education, and archival work to create usable, accessible, easily maintainable user-facing solutions. He is also passionate about his commercial design practice and is always open to collaborating with new people.
   
