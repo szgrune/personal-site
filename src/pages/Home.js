@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 import "../App.css";
 
 import biobuoyImage from "../img/biobuoy_card.png";
-import infotopiaImage from "../img/infotopia_hero.png";
 import infotopiaVideo from "../img/Infotopia_demo.mov";
 import mybooksImage from "../img/openlibrary.png";
 import noraImage from "../img/nora_platform.png";
