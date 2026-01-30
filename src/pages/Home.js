@@ -189,7 +189,7 @@ export default function Home() {
 
     return (
     <div>
-        <Typography variant="h3" component="h3" sx={{ textAlign: 'center', marginBottom: '5vh' }}>
+        <Typography variant="h5" component="h5" sx={{ textAlign: 'center', marginBottom: '5vh' }}>
             Designing and building experiences <br/>
             at the meeting point of technology + culture + the humanities
         </Typography>
