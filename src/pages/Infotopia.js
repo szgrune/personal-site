@@ -68,7 +68,7 @@ const Infotopia = () => {
       }
 </style>
 ### Infotopia
-###### A conceptual data visualization of a city, imagining the cognitive and ecological impactsof online activity in the European Union as buildings: 
+###### A conceptual data visualization of a city, imagining the cognitive and ecological impacts of online activity in the European Union as buildings: 
 ###### Nine buildings representing nine of the most popular online activities are shown with heights scaled to usage, widths scaled to ecological impact, and surface geometry with gaps representing the level of cognitive load and stress associated with each activity.
 <figure>
     <video autoplay loop muted>

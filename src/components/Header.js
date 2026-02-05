@@ -4,7 +4,7 @@ import { Box, Typography } from "@mui/material";
 import MaterialUISwitch from "./MaterialUISwitch.js";
 import MainNavigation from "./MainNavigation.js";
 
-import resumePDF from "../img/Samuel Grunebaum CV 2025.pdf";
+import resumePDF from "../img/Samuel Grunebaum CV 2026.pdf";
 import portfolioPDF from "../img/Samuel Grunebaum Portfolio (General).pdf";
 import { ReactComponent as ExternalLink } from "../img/external-link.svg"
 
