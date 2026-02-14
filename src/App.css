@@ -50,7 +50,7 @@ h3 > a {
 
 /* Allow border-radius on Switch components */
 .MuiSwitch-root {
-  border-radius: 10px !important;
+  border-radius: 100px !important;
 }
 
 .MuiSwitch-track {
