@@ -93,7 +93,7 @@ function About() {
 #### Designer, Developer, Educator
 
 <div id="container">
-  <img src="./headshot.png">
+  <img src="./headshot.jpg">
 
   <div>
   Samuel Grunebaum is a technologist, designer, entrepreneur, and educator from New York City. He is currently pursuing a Master of Design Engineering degree at the Harvard University Graduate School of Design, expecting to graduate in Spring 2027. At Harvard, Samuel is collaborating with the Loeb Library to produce a more robust, accessible set of student guide resources and working with the Harvard metaLAB to design and build critical AI education tools for teachers and learners. 
