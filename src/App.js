@@ -11,6 +11,7 @@ import "./App.css";
 
 import Header from "./components/Header.js";
 import Home from './pages/Home.js';
+import Work from './pages/Work.js';
 import Contact from './pages/Contact.js';
 import About from './pages/About.js';
 import OpenLib from './pages/OpenLibrary.js';
@@ -92,6 +93,7 @@ function Inner() {
               <Routes location={location}>
                 <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Home />} />
+                <Route path="/work" element={<Work />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/infotopia" element={<Infotopia />} />

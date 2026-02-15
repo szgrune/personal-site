@@ -1,0 +1,152 @@
+a {
+  color: inherit !important;
+  opacity: 0.8;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+h3 > a {
+  text-decoration-thickness: 2.5px !important;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.css-6t16uj {
+  height: 100%;
+}
+
+.css-ym0zmt {
+  height: 100%;
+}
+
+.css-1qw96cp {
+  height: 100%;
+}
+
+/* Ensure all card wrapper classes have height: 100% for equal card heights */
+.MuiPaper-root,
+.MuiCardActionArea-root,
+.MuiCard-root {
+  height: 100% !important;
+  border-radius: 0 !important;
+}
+
+/* Button base components should have rounded corners */
+.MuiButtonBase-root {
+  border-radius: 50% !important;
+}
+
+/* Ensure CardContent uses flexbox for proper layout */
+.MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 0 !important;
+}
+
+/* Allow border-radius on Switch components */
+.MuiSwitch-root {
+  border-radius: 100px !important;
+}
+
+.MuiSwitch-track {
+  border-radius: 10px !important;
+}
+
+.MuiSwitch-thumb {
+  border-radius: 50% !important;
+}
+
+.MuiSwitch-thumb:before {
+  border-radius: 50% !important;
+}
+
+/* Ensure Grid items stretch to full height */
+.MuiGrid-item {
+  display: flex;
+}
+
+.MuiGrid-item > * {
+  width: 100%;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.fade-exit {
+  display: none;
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+figure > div > div {
+  padding: 0 2vw;
+}
+
+@media only screen and (max-width:600px) {
+  figure > div > div {
+    width: 50%;
+    border-right: .5px solid black;
+    border-left: .5px solid black;
+  }
+}
+
+.App {
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Coolvetica'), url('./fonts/CoolveticaEl-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'DeAetna';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('DeAetna'), url('./fonts/DeAetna-Subhead.otf') format('otf');
+}
+@font-face {
+  font-family: 'Folio Book';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Folio'), url('./fonts/Folio-Book-BT.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Noto Sans'), url('./fonts/Noto-Sans-regular.woff2') format('woff2');
+}

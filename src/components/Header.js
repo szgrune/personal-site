@@ -18,9 +18,10 @@ export default function Header(props) {
     };
 
     return (
-      <div className="header" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: '3vh', marginLeft: '5vw', marginRight: '5vw', marginBottom: '5vw' }}>
+      <div className="header" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: '3vh', marginLeft: '5vw', marginRight: '5vw', marginBottom: '3vh' }}>
         <Typography variant="h5" style={{ cursor: "pointer" }} button onClick={() => redirectRoute("/")}>samuel z grunebaum</Typography>
         <Box classname="menuDesktop" sx={{ display: {xs:"none", sm: "flex" }, flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end'}}>
+          <Typography variant="h6" style={{ cursor: "pointer", marginRight: "3vw" }} button onClick={() => redirectRoute("/work")}>work</Typography>
           <Typography variant="h6" style={{ cursor: "pointer", marginRight: "3vw" }} button onClick={() => redirectRoute("/about")}>about</Typography>
           <Typography variant="h6" style={{ cursor: "pointer", marginRight: "3vw" }} button onClick={() => redirectRoute("/contact")}>contact</Typography>
           <Typography variant="h6" style={{ cursor: "pointer", marginRight: "3vw" }}>

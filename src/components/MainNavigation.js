@@ -99,6 +99,7 @@ export default function MainNavigation(props) {
 
                     <Box sx={{mb: 2}}>
                         <Box onClick={toggleDrawer(false)}>
+                            <Typography variant="h6" sx={{ cursor: "pointer", textAlign: "center", p: 2 }} onClick={() => redirectRoute("/work")}>work</Typography>
                             <Typography variant="h6" sx={{ cursor: "pointer", textAlign: "center", p: 2 }} onClick={() => redirectRoute("/about")}>about</Typography>
                             <Typography variant="h6" sx={{ cursor: "pointer", textAlign: "center", p: 2 }} onClick={() => redirectRoute("/contact")}>contact</Typography>
                         </Box>
