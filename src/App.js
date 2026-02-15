@@ -47,7 +47,7 @@ export default function App() {
         fontFamily: 'Folio Book, Helvetica, Arial, sans-serif',
       },
       h5: {
-        fontFamily: 'Coolvetica, sans-serif',
+        fontFamily: 'Folio Book, Helvetica, Arial, sans-serif',
         fontSize: '1.5rem !important',
         letterSpacing: '0.05em !important',
       },

@@ -5,7 +5,7 @@ import React, { useState, useRef, useEffect, useCallback } from "react";
 const FRICTION = 0.98;
 const BOUNCE = 0.6;
 const WALL_BOUNCE = 0.5;
-const PARALLAX_STRENGTH = 0.08;
+//const PARALLAX_STRENGTH = 0.08;
 const IS_DESKTOP = typeof window !== "undefined" && !window.matchMedia("(pointer: coarse)").matches;
 
 function clampItem(item, bounds) {
