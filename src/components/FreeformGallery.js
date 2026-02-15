@@ -5,7 +5,7 @@ import React, { useState, useRef, useEffect, useCallback } from "react";
 const FRICTION = 0.98;
 const BOUNCE = 0.6;
 const WALL_BOUNCE = 0.5;
-//const PARALLAX_STRENGTH = 0.08;
+const PARALLAX_STRENGTH = 0.08;
 const IS_DESKTOP = typeof window !== "undefined" && !window.matchMedia("(pointer: coarse)").matches;
 
 function clampItem(item, bounds) {
@@ -84,9 +84,9 @@ function getInitialLayout(containerWidth, heights, aspectRatios) {
   const h1 = heights[1];
   const h2 = heights[2];
   return [
-    { x: w * 0.12, y: 24, width: h0 * ar0, height: h0, vx: 0, vy: 0 },
-    { x: w * 1.28, y: 194, width: h1 * ar1, height: h1, vx: 0, vy: 0 },
-    { x: w * 0.32, y: 24 + h0 + 40, width: h2 * ar2, height: h2, vx: 0, vy: 0 },
+    { x: w * 0.26, y: 88, width: h0 * ar0, height: h0, vx: 0, vy: 0 },
+    { x: w * 1.48, y: 72, width: h1 * ar1, height: h1, vx: 0, vy: 0 },
+    { x: w * 1.01, y: h1 + 48, width: h2 * ar2, height: h2, vx: 0, vy: 0 },
   ];
 }
 
@@ -303,8 +303,8 @@ export default function FreeformGallery({ videoSrc, gifSrc, imageSrc, heights: h
       style={{
         position: "relative",
         width: "100%",
-        minHeight: "110vh",
-        marginBottom: "8vh",
+        minHeight: "90vh",
+        marginBottom: "0vh",
         padding: "0 4vw",
         boxSizing: "border-box",
       }}
